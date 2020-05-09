@@ -20,20 +20,20 @@ Let's look at the various components that you'll need when developing extendscri
     <th style="text-align:left">Description</th>
   </tr>
   <tr>
-    <td style="text-align:center"><img src='./assets/vsCodeLogo.png' width='70px'></td>
+    <td style="text-align:right"><img src='./assets/vsCodeLogo.png' width='70px'></td>
     <td>VS Code - our IDE. </td>
   </tr>
     <tr>
-    <td style="text-align:center"><img src='./assets/exstendScriptAddOn.png' width='80px'></td>
+    <td style="text-align:right"><img src='./assets/exstendScriptAddOn.png' width='80px'></td>
     <td>The ExtendScript VS Code plug-in translates our written JavavScript or ExtendScipt code to commands that the host applications kan understand via the CS Interface. We'll come back to the CS Interface.</td>
   </tr>
     </tr>
     <tr>
-    <td style="text-align:center"><img src='./assets/hostLogo.png' width='140px'></td>
+    <td style="text-align:right"><img src='./assets/hostLogo.png' width='140px'></td>
     <td></td>
   </tr>
       <tr>
-    <td style="text-align:center"><img src='./assets/scriptLogo.png' width='60px'></td>
+    <td style="text-align:right"><img src='./assets/scriptLogo.png' width='60px'></td>
     <td></td>
   </tr>
 </table>
