@@ -72,6 +72,6 @@ createAudioTracks(nrTracks)
 In summary, we'll hook-up our VS Code text editor with the Adobe applications through the ExtendScript Debugger extension which will allow us to execute and debug ExtendScript code from within VS Code. How all these components fit together looks something like this: 
 
 <div style='text-align:center'>
-    <img src='./assets/architecture.png' width='60%'>
+    <img src='./assets/architecture.png' width='60%' style='margin:auto auto'>
 </div>
 
