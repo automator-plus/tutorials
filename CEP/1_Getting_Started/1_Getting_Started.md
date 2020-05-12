@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+
 # Introduction to Adobe Scripting with CEP and VS Code
 
 ## 1. Introduction
@@ -72,6 +74,6 @@ createAudioTracks(nrTracks)
 In summary, we'll hook-up our VS Code text editor with the Adobe applications through the ExtendScript Debugger extension which will allow us to execute and debug ExtendScript code from within VS Code. How all these components fit together looks something like this: 
 
 <div style='text-align:center'>
-    <img src='./assets/architecture.png' width='60%' style='margin:auto auto'>
+    <img src='./assets/architecture.png' width='60%' class="center">
 </div>
 
