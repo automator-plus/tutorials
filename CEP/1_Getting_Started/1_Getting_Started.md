@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-
 # Introduction to Adobe Scripting with CEP and VS Code
 
 ## 1. Introduction
@@ -73,7 +71,29 @@ createAudioTracks(nrTracks)
 
 In summary, we'll hook-up our VS Code text editor with the Adobe applications through the ExtendScript Debugger extension which will allow us to execute and debug ExtendScript code from within VS Code. How all these components fit together looks something like this: 
 
-<div style='text-align:center'>
-    <img src='./assets/architecture.png' width='60%' class="center">
-</div>
+<img src='./assets/architecture.png' width='100%'>
 
+## 3. Installing Everything
+
+### VS Code
+
+First we'll head over to the VS Code website  <a href='https://code.visualstudio.com/'>here</a> and do the download deed for your operating system. 
+
+<img src='./assets/VS_Code_Download.jpg' width='100%'>
+
+Go ahead and click the next-next-next on Windows or drag VS Code into Applications on Mac.
+
+### Debug Extension
+
+Next we're going to install the ExtendScript Debugger extension by going to the extensions tab within VS Code. You can find the extension tab by clicking on the 4 square icon:
+
+<img src='./assets/ExtensionIcon.jpg' width='76px'>
+
+Once on the extension tab, you can search for the term "ExtendScript". You should now see something simliar to:
+
+<img src='./assets/ExtensionView.jpg' width='100%'>
+
+Go ahead and install both the ExtendScript Debugger extension as well as the extension just titled "ExtendScript". The later will allow for syntax highlighting for the ExtendScript language within Visual Studio Code. 
+
+
+## 4. Running Some Code
