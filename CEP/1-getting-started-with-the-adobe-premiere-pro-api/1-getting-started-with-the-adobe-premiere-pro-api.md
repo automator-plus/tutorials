@@ -178,7 +178,7 @@ If you've already installed the ExtendScript Debugger Extension you should see t
 
 This should create a launch.json file with the following contents:
 
-```json
+```javascript
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -226,7 +226,7 @@ If you hit the ▷ again and insert `muteTrack1.jsx` VS Code should execute the 
 
 You might want to change your `launch.json` file to 
 
-```json
+```javascript
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
