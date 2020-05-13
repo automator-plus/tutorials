@@ -14,7 +14,16 @@ As with everything in life, whatever tools works for you and solves your problem
 
  The <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> allows us a way to program commands and actions directly into any Adobe Creative Cloud applications using a HTML5/JavaScript interface model. What this means is that with some HTML, CSS and JavaScript code you can interact with the Adobe applications and gain some super powers. 
 
- For Example:
 
+### Tutorials
 
+We've got a YouTube playlist with all the videos for the following tutorials:
 
+<div style="color:red">Not sure about numbers for videos?</div>
+
++ <a href="./CEP/1-getting-started-with-adobe-extendscript/1-getting-started-with-adobe-extendscript.md">1 Getting Started with Adobe ExtendScript</a>
++ <a href="./CEP/2-picking-up-the-speed-with-the-adobe-cep-api/2-picking-up-the-speed-with-the-adobe-cep-api.md">2 Picking Up The Speed with the Adobe CEP API</a>
++ <a href="./CEP/3-extendscript-and-javascript-programming-basics/3-extendscript-and-javascript-programming-basics.md">3 ExtendScript and JavaScript Programming Basics</a>
++ <a href="./CEP/4-more-advanced-adobe-cep-examples/4-more-advanced-adobe-cep-examples.md">4 More Advanced Adobe CEP Examples</a>
++ <a href="./CEP/5-making-a-adobe-premiere-pro-extension/5-making-a-adobe-premiere-pro-extension.md">5 Making a Adobe Premiere Pro Extension</a>
++ <a href="./CEP/6-adobe-premiere-pro-clip-analysis-extension/6-adobe-premiere-pro-clip-analysis-extension.md">6 Adobe Premiere Pro Clip Analysis Extension</a>

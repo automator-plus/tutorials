@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    {
+        "type": "extendscript-debug",
+        "request": "launch",
+        "name": "1-toggling-tracks",
+        "program": "${workspaceFolder}/CEP/1-getting-started/examples/toggling-tracks.jsx",
+        "stopOnEntry": false
+    }
+    ]
+}
