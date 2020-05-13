@@ -4,7 +4,7 @@
         "type": "extendscript-debug",
         "request": "launch",
         "name": "1-toggling-tracks",
-        "program": "${workspaceFolder}/CEP/1-getting-started/examples/toggling-tracks.jsx",
+        "program": "${workspaceFolder}/CEP/1-getting-started-with-the-adobe-premiere-pro-api/examples/toggling-tracks.jsx",
         "stopOnEntry": false
     }
     ]

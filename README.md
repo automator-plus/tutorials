@@ -21,9 +21,9 @@ We've got a YouTube playlist with all the videos for the following tutorials:
 
 <div style="color:red">Not sure about numbers for videos?</div>
 
-+ <a href="./CEP/1-getting-started-with-adobe-extendscript/1-getting-started-with-adobe-extendscript.md">1 Getting Started with Adobe ExtendScript</a>
-+ <a href="./CEP/2-picking-up-the-speed-with-the-adobe-cep-api/2-picking-up-the-speed-with-the-adobe-cep-api.md">2 Picking Up The Speed with the Adobe CEP API</a>
-+ <a href="./CEP/3-extendscript-and-javascript-programming-basics/3-extendscript-and-javascript-programming-basics.md">3 ExtendScript and JavaScript Programming Basics</a>
-+ <a href="./CEP/4-more-advanced-adobe-cep-examples/4-more-advanced-adobe-cep-examples.md">4 More Advanced Adobe CEP Examples</a>
-+ <a href="./CEP/5-making-a-adobe-premiere-pro-extension/5-making-a-adobe-premiere-pro-extension.md">5 Making a Adobe Premiere Pro Extension</a>
-+ <a href="./CEP/6-adobe-premiere-pro-clip-analysis-extension/6-adobe-premiere-pro-clip-analysis-extension.md">6 Adobe Premiere Pro Clip Analysis Extension</a>
++ <a href="./CEP/1-getting-started-with-the-adobe-premiere-pro-api/1-getting-started-with-the-adobe-premiere-pro-api.md">1 Getting Started with the Adobe Premiere Pro API</a>
++ <a href="./CEP/2-picking-up-the-speed-with-the-adobe-premiere-pro-api/2-picking-up-the-speed-with-the-adobe-premiere-pro-api.md">2 Picking Up The Speed with the Adobe Premiere Pro API</a>
++ <a href="./CEP/3-adobe-extendscript-and-javascript-programming-basics/3-adobe-extendscript-and-javascript-programming-basics.md">3 Adobe ExtendScript and JavaScript Programming Basics</a>
++ <a href="./CEP/4-more-advanced-adobe-premiere-pro-api-examples/4-more-advanced-adobe-premiere-pro-api-examples.md">4 More Advanced Adobe Premiere Pro API Examples</a>
++ <a href="./CEP/5-making-an-adobe-premiere-pro-extension/5-making-an-adobe-premiere-pro-extension.md">5 Making an Adobe Premiere Pro Extension</a>
++ <a href="./CEP/6-adobe-premiere-pro-api-clip-analysis/6-adobe-premiere-pro-api-clip-analysis.md">6 Adobe Premiere Pro API Clip Analysis</a>
