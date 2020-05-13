@@ -29,7 +29,7 @@ In this tutorial, we'll cover:
 
  If you've never coded in you're life, don't worry! And if acronyms like IDE and API are still a bit foreign to you, great! Then you might actually learn something... If you already know these terms, we still hope we can teach you something. Ultimately, we want to bring you the knowledge that will show you how to unlock the superpowers that programming the Adobe suite unlocks.
 
- ## 2. What is an IDE
+ ## 3. What is an IDE
 
 To start, an IDE is an acronym for Integrated Development Environment, and an IDE is basically the "text editor" that you code in. I say "text editor" in air quotes as your "text editor" when coding isn't <i>just</i> a "text editor", it is your interface into the matrix and choosing the right IDE ensures a high bandwidth connection. There is an old saying about a bad workman always blaming his tools, and there is truth in that. However, not when it comes to IDE's. Some IDE's give you supra powers, others give you just powers. 
 
@@ -39,9 +39,9 @@ For the non-programming folk, open-source software is essentially free software,
 
 You might think why would Adobe make software available for free and not charge for it. Well, they've learned from the rest of the world that the only way to have a stable code base is to make your code open-source that the open-source community, you and I, can build, test and deploy useful add-ons to their software without any cost to them. So open source isn't completely free, Adobe still employs many software engineers to write and maintain the CEP API, however, the benefit that Adobe gets by having the entire world test their code base and create new plug-ins outweighs the costs tenfold. 
 
-## 3. The Premiere Pro API
+## 4. The Premiere Pro API
 
-### 3.1. What is an API
+### 4.1. What is an API
 
 An API, or Application Programming Interface is a set of functions that allows interaction with an application. Basically, a defined list of commands that tell you how to call the functions, and what you can expect in return. 
 
@@ -56,7 +56,7 @@ The documentation shows us that we can execute the <setMute()> function (or meth
 Also _all_ the available methods aren't always documented in the main API documentation - this is unfortunately the other side of the open-source community, it's up to us to improve discprepancies like this. Luckily, Adobe is always keen to help and they've got a dedicated guy looking out for the Premiere Pro API concerns, Bruce Bullis. You can drop him a mail if you have any question at bbb@adobe.com and he usually comes back within a few days with some advice or pointing you in a direction.
 
 
-### 3.2. How everything fits together
+### 4.2. How everything fits together
 
 Let's look at how the various components fit together to get you up and running to develop some ExtendScript using the Premiere API in VS Code.
 
@@ -96,7 +96,7 @@ Let's look at how the various components fit together to get you up and running 
         To give you a taste of the code you'll be writing, below I show some code written in the <b>Adobe ExtendScript</b>  language that uses the <b>Premiere Pro API</b> to set the mute state the first video clip to true.<br>
         <pre>videoTracks = app.project.activeSequence.videoTracks; // Get all the video tracks
 firstTrack = videoTracks[0]; // Get the first video track
-firstTrack.setMute(true); // Set the track's muted attribute</pre>
+firstTrack.setMute(true); // Set the firstTrack's muted attribute using the setMute method</pre>
         The code above follows 3 steps to change the mute attribute of the first track to true. 
         <ul>
         <li>First we get all the video track objects of the active sequence and store them in a list called <code>videoTracks</code>.</li>
@@ -127,9 +127,9 @@ In summary, we'll hook-up our VS Code text editor with the Adobe applications th
 
 <img src='./assets/architecture.png' width='100%'>
 
-## 4. Setting Everything Up
+## 5. Setting Everything Up
 
-### 4.1. VS Code
+### 5.1. VS Code
 
 First, we'll head over to the VS Code website  <a href='https://code.visualstudio.com/'>here</a> and do the download deed for your operating system. 
 
@@ -137,7 +137,7 @@ First, we'll head over to the VS Code website  <a href='https://code.visualstudi
 
 Go ahead and click the next-next-next on Windows or drag VS Code into Applications on Mac.
 
-### 4.2. Debug Extension
+### 5.2. Debug Extension
 
 Next, we're going to install the ExtendScript Debugger extension by going to the extensions tab within VS Code. You can find the extension tab by clicking on the 4 square icon, 👇 this one.
 
@@ -150,13 +150,102 @@ Once on the extension tab, you can search for the term "ExtendScript". You shoul
 Go ahead and install both the <b>ExtendScript Debugger</b> extension as well as the extension just titled <b>ExtendScript</b>. The later extension will allow for syntax highlighting for the ExtendScript language within VS Code. In other words, VS Code becomes aware of what are valid ExtendScript commands and colours your files accordingly. To be sure the extensions are successfully installed, go ahead and close and reopen VS Code.
 
 
-## 5. Running some code
+## 6. Running some code
 
-In this section we'll execute a basic ExtendScript 
+### 6.1 Creating a VS Code folder as to serve as workspace
 
-### 5.1 Creating an ExtendScript File
+To execute some code, we'll need a folder to act as our workspace to hold all our files. Create a new folder somewhere on your drive and open that folder with VS code by going to `File > Open Workspace`. Then create a new file within VS Code by going to  `File > New File` and saving it as `muteTrack1.jsx` in your workspace folder.
+
+Next you can copy paste the following ExtendScript code into the `muteTrack1.jsx` file and save.
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks; // Get all the video tracks
+firstTrack = videoTracks[0]; // Get the first video track
+firstTrack.setMute(true); // Set the firstTrack's muted attribute using the setMute method
+```
+
+### 6.2. The launch.json file
+
+Next we need to create a `launch.json` file for our debugger to know which file to execute when we hit run. 
+
+Head over to the debug tab within VS code and create a `launch.json` file.
+
+<img src='./assets/VS-code-debugger.jpg' width='400px'>
+
+If you've already installed the ExtendScript Debugger Extension you should see the option to add the  ExtendScript Debug configuration by selecting the `ExtendScript Debug` as the environment. 
+
+<img src='./assets/debugger-environment.jpg' width='200px'>
+
+This should create a launch.json file with the following contents:
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Ask for script name",
+            "program": "${workspaceFolder}/${command:AskForScriptName}",
+            "stopOnEntry": false
+        }
+    ]
+}
+```
+
+You should also see a configuration to run in the debug tab, which reflects the default script configuration we just added. The default ExtendScript Debug configuration asks the user to supply the script path to execute relative to the `workspaceFolder`. 
+
+<img src='./assets/vs-code-ask-for-script-name.jpg' width='400px'>
 
 
-### 5.2. The launch.json file
+### 6.3. Executing the code
 
-Once you've installed the extension 
+You can see execute the `Ask for script name` task by pressing the ▷ icon in the debug panel. An input dialog will pop-up, enter `muteTrack1.jsx` and hit enter.
+
+<img src='./assets/vs-code-filename-insert.jpg' width='600px'>
+
+This should bring up the following error...
+
+
+<img src='./assets/vs-code-no-active-target.jpg' width='400px'>
+
+That's right, we still have to tell VS Code to which Adobe host application it should target our code at. If you look at the bottom of VS Code, you should see some yellow text saying: `Select the target application`.
+
+<img src='./assets/vs-code-select-target-application.jpg' width='600px'>
+
+This should bring up the following dialog which will detect what Adobe application you have installed and allow you to select thm as a target. Make sure the target application you want to select is open, and then select the target. For me today the target will be `Adobe Premiere Pr CC 2019`. You should then see the yellow text `Select the target application` change to your selected target. 
+
+<img src='./assets/vs-code-select-target-application-options.jpg' width='600px'>
+
+If you hit the ▷ again and insert `muteTrack1.jsx` VS Code should execute the code and your first video track in Premiere Pro should be muted. 
+
+### 6.4 Speeding up our development life cycle
+
+You might want to change your `launch.json` file to 
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Mute Track 1",
+            "program": "${workspaceFolder}/muteTrack1.jsx",
+            "stopOnEntry": false
+        }
+    ]
+}
+```
+
+This way you won't have to paste the filename into the dialog every time. 
+
+Change the last line in your `muteTrack1.jsx` file to `firstTrack.setMute(false);` and see what happens when you execute it again.
+
+## 7 Conclusion
