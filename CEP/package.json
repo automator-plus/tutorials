@@ -1,0 +1,18 @@
+{
+    "name": "devscripts",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "wrong_integer_summation": "nodemon ./2-picking-up-the-speed-with-the-adobe-premiere-pro-api/examples/wrong_integer_summation.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@std/esm": "^0.26.0",
+        "dataframe-js": "^1.4.3",
+        "lodash": "^4.17.15"
+    },
+    "@std/esm": "cjs",
+    "description": ""
+}

@@ -49,7 +49,9 @@ This defined list of commands for an API is usually called <i>documentation</i> 
 
 <img src="./assets/PP_mute_api_example.jpg" width="100%">
 
-The documentation shows us that we can execute the <setMute()> function (or method) if we have a `Track Object`. Again, if this is not making sense, don't worry we'll unpack all of it. However, something to note, is that the documentation for especially the Premiere Pro API is sometimes a bit outdated or faulty. For example, the `setMute()` method shown in the image above takes 1 parameter, `isMuted`. However, the main definition is missing the argument, as shown below, making it a bit confusing.
+The documentation shows us that we can execute the <code>setMute()</code> function (or method) if we have a `Track Object`. 
+
+Again, if this is not making sense, don't worry we'll unpack all of it. However, something to note, is that the documentation for especially the Premiere Pro API is sometimes a bit outdated or faulty. For example, the `setMute()` method shown in the image above takes 1 parameter, `isMuted`. However, the main definition is missing the argument, as shown below, making it a bit confusing.
 
 <img src="./assets/PP_mute_api_example_fix.jpg">
 
