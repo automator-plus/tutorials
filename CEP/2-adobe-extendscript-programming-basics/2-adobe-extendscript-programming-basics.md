@@ -64,7 +64,7 @@ Let's unpack what is happening here. We've used the built in JS function `consol
 
 Variables... What are variables? 
 
-Essentially variables are placeholders, things that house values for us that change (are variable) over time. For example, below we will declare 2 variables called `a` and `b`. These names are completely arbitrary and it is up to you to choose meaningful variable names - `a` and `b` are bad variable name BTW - we improve them later. 
+Essentially variables are placeholders, things that house values for us that change (are variable) over time. For example, below we will declare 2 variables called `a` and `b`. These names are completely arbitrary and it is up to you to choose meaningful variable names - `a` and `b` are bad variable names BTW.
 
 In JavaScript we declare variables using the `var` keyword, like `var a = 1`. OK, you don't have to type `var`, `a = 1` will work just fine. However, this is where those ECMA Script version snags come in. In ES3 it is fine to declare your variables without using `var`, however if you're going to be transpiling code from ES6 to ES3, you're going to need the `var` keyword. 
 
@@ -96,7 +96,7 @@ b = 4;
 
 anything can really be done with your variable downstream. So where does this leave you? Rather use `var` instead of nothing. This way you can use you're code later on if you start using transpilers, also, it's only 4 characters and a good JS coding habit to form. Until you know why the other keywords exists and know why you need them, just use `var`. 
 
-Ok, so variable hold values. But why? Well, to make programming more modular and easier to write. To bring it back to the Premiere Pro API,  instead of writing:
+Ok, so variable hold values. But why? Well, to make programming more modular and easier to write. To bring it back to the Premiere Pro API, instead of writing:
 
 ```javascript
 app.project.activeSequence.videoTracks[0].setMute(true);
@@ -114,4 +114,48 @@ But what about efficiency I hear you say? Doesn't declaring more variable take u
 
 Someone once said: "machines don't read code, humans do."
 
+### Variable Types
+
+After the value of your variable stored in RAM, your variable's type is the seconds most important thing to take note of. Knowing which type your variable is will allow you to anticipate how they will behave when certain opertaions are applied to them. For example, if we declare 2 text variables, called  *string* variables,
+
+```javascript
+var greetingTemplate = "Hallo there, ";
+var name = "John";
+var result = greetingTemplate + name;
+console.log(result);
+```
+
+and I sum them together using the `+` operator I get, "Hello there, John"
+
+<p align="center">
+  <img src='./assets/string-concat.gif' width='530px'>
+</p>
+
+You can think that the behaviour will be different if I declare 2 numbers, for example
+
+```javascript
+var number1 = 1;
+var number2 = 2;
+var result = number1+number2;
+console.log(result);
+```
+
+
+<p align="center">
+  <img src='./assets/number-summation.gif' width='530px'>
+</p>
+
+So what tells JavaScript which is which? The double quoates, `""`, in this case. If we write anything in double quotes JavaScript interprets it as a string. We can check the types of variables using the `typeof` function, for example
+
+```javascript
+var stringNumber = "2";
+var numberNumber = 2;
+console.log(typeof(stringNumber))
+console.log(typeof(numberNumber))
+```
+
+
+<p align="center">
+  <img src='./assets/type-checking.gif' width='530px'>
+</p>
 
