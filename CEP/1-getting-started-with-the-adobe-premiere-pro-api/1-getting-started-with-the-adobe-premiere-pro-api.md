@@ -1,4 +1,11 @@
-# 1 Getting Started with Adobe ExtendScript in Premiere Pro
+# Tutorial 1: Getting Started with Adobe ExtendScript in Premiere Pro
+
+<p align="center">
+  <img src='./assets/cover-image.jpg'>
+  <cite>Photo by <a href='https://unsplash.com/@peter_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Peter Stumpf</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
+</p>
+
+
 
 ## 1. Introduction
 
@@ -6,7 +13,7 @@ In this tutorial we'll go through the basic steps you'll need to get up and runn
 
  Whether this is your first time having a go at programming something in Adobe's ExtendScript language or if you're already a seasoned ExtendScript programmer, welcome. Irrespective of the extent of your programming knowledge, we hope to show you a few examples of how you can take control of your Adobe applications through code. Once you get the hang of it you can start putting together some supra-natural pipelines and automations. 
 
- In this tutorial we will only focus on writing ExtendScript to interact with Adobe's Premiere Pro. However, you can do the same for After Effect and Illustrator. For more information on these topics check out the following links:
+ In this tutorial, we will only focus on writing ExtendScript to interact with Adobe's Premiere Pro. However, you can do the same for After Effect and Illustrator. For more information on these topics check out the following links:
 
 + Premiere Pro ExtendScript API documentation: http://ppro.aenhancers.com
 + After Effects ExtendScript API documentation http://docs.aenhancers.com
@@ -15,7 +22,7 @@ In this tutorial we'll go through the basic steps you'll need to get up and runn
 
 ## 2. What we'll cover
 
-In this this tutorial, we'll not only show you how use the Premiere Pro API, but also give you some background knowledge about how the system is put together behind the scenes to give you some intuition about how your code is executing. Having an understanding about what is executing what where will help when things go wrong. 
+In this tutorial, we'll not only show you how to use the Premiere Pro API but also give you some background knowledge about how the system is put together behind the scenes to give you some intuition about how your code is executing. Having an understanding of what is executing what where will help when things go wrong. 
 
 In this tutorial, we'll cover: 
 
@@ -33,9 +40,9 @@ In this tutorial, we'll cover:
 
 To start, an IDE is an acronym for Integrated Development Environment, and an IDE is basically the "text editor" that you code in. I say "text editor" in air quotes as your "text editor" when coding isn't <i>just</i> a "text editor", it is your interface into the matrix and choosing the right IDE ensures a high bandwidth connection. There is an old saying about a bad workman always blaming his tools, and there is truth in that. However, not when it comes to IDE's. Some IDE's give you supra powers, others give you just powers. 
 
-Luckily, Adobe has made the best choice for us all by releasing an open-source VS Code Debug Extension that enables the VS Code Application to connect into the Adobe CC applications. Previously, you had to use the Adobe created ExtendScript Toolkit to run your Adobe ExtendScript code, read more <a href='https://www.adobe.com/devnet/scripting.html'>here</a>. Let's just say that the user experience of the ExtendScript Toolkit isn't something you'll write home about and learning how to program while using such a difficult UI has made it difficult in the past for non-programming folk to get started with the CEP API. Luckily, the the VS Code extension that Adobe open sourced changes all that. 
+Luckily, Adobe has made the best choice for us all by releasing an open-source VS Code Debug Extension that enables the VS Code Application to connect into the Adobe CC applications. Previously, you had to use the Adobe created ExtendScript Toolkit to run your Adobe ExtendScript code, read more <a href='https://www.adobe.com/devnet/scripting.html'>here</a>. Let's just say that the user experience of the ExtendScript Toolkit isn't something you'll write home about and learning how to program while using such a difficult UI has made it difficult in the past for non-programming folk to get started with the CEP API. Luckily, the VS Code extension that Adobe open-sourced changes all that. 
 
-For the non-programming folk, open-source software is essentially free software, well sort off. The code is freely available for you to use and abuse. To get an idea of what open-source software entails, you can think of projects like JavaScript, <a href='https://www.python.org/'>Python</a> or <a href='https://www.linux.org/'>Linux</a>. You don't need to buy a license from the creators to build products using any of these project. 
+For the non-programming folk, open-source software is essentially free software, well sort off. The code is freely available for you to use and abuse. To get an idea of what open-source software entails, you can think of projects like JavaScript, <a href='https://www.python.org/'>Python</a> or <a href='https://www.linux.org/'>Linux</a>. You don't need to buy a license from the creators to build products using any of these projects. 
 
 You might think why would Adobe make software available for free and not charge for it. Well, they've learned from the rest of the world that the only way to have a stable code base is to make your code open-source that the open-source community, you and I, can build, test and deploy useful add-ons to their software without any cost to them. So open source isn't completely free, Adobe still employs many software engineers to write and maintain the CEP API, however, the benefit that Adobe gets by having the entire world test their code base and create new plug-ins outweighs the costs tenfold. 
 
@@ -43,9 +50,9 @@ You might think why would Adobe make software available for free and not charge 
 
 ### 4.1. What is an API
 
-An API, or Application Programming Interface is a set of functions that allows interaction with an application. Basically, a defined list of commands that tell you how to call the functions, and what you can expect in return. 
+An API or Application Programming Interface is a set of functions that allows interaction with an application. Basically, a defined list of commands that tell you how to call the functions, and what you can expect in return. 
 
-This defined list of commands for an API is usually called <i>documentation</i> and the API documentation for the Premiere Pro API can be found at http://ppro.aenhancers.com. If you head over to http://ppro.aenhancers.com you'll see something similiar to the image below. 
+This defined list of commands for an API is usually called <i>documentation</i> and the API documentation for the Premiere Pro API can be found at http://ppro.aenhancers.com. If you head over to http://ppro.aenhancers.com you'll see something similar to the image below. 
 
 <img src="./assets/PP_mute_api_example.jpg" width="100%">
 
@@ -55,7 +62,7 @@ Again, if this is not making sense, don't worry we'll unpack all of it. However,
 
 <img src="./assets/PP_mute_api_example_fix.jpg">
 
-Also _all_ the available methods aren't always documented in the main API documentation - this is unfortunately the other side of the open-source community, it's up to us to improve discprepancies like this. Luckily, Adobe is always keen to help and they've got a dedicated guy looking out for the Premiere Pro API concerns, Bruce Bullis. You can drop him a mail if you have any question at bbb@adobe.com and he usually comes back within a few days with some advice or pointing you in a direction.
+Also _all_ the available methods aren't always documented in the main API documentation - this is, unfortunately, the other side of the open-source community, it's up to us to improve discrepancies like this. Luckily, Adobe is always keen to help and they've got a dedicated guy looking out for the Premiere Pro API concerns, Bruce Bullis. You can drop him a mail if you have any question at bbb@adobe.com and he usually comes back within a few days with some advice or points you in a direction.
 
 
 ### 4.2. How everything fits together
@@ -154,11 +161,11 @@ Go ahead and install both the <b>ExtendScript Debugger</b> extension as well as 
 
 ## 6. Running some code
 
-### 6.1 Creating a VS Code folder as to serve as workspace
+### 6.1 Creating a VS Code folder as to serve as a workspace
 
 To execute some code, we'll need a folder to act as our workspace to hold all our files. Create a new folder somewhere on your drive and open that folder with VS code by going to `File > Open Workspace`. Then create a new file within VS Code by going to  `File > New File` and saving it as `muteTrack1.jsx` in your workspace folder.
 
-Next you can copy paste the following ExtendScript code into the `muteTrack1.jsx` file and save.
+Next, you can copy-paste the following ExtendScript code into the `muteTrack1.jsx` file and save.
 
 ```javascript
 videoTracks = app.project.activeSequence.videoTracks; // Get all the video tracks
@@ -168,7 +175,7 @@ firstTrack.setMute(true); // Set the firstTrack's muted attribute using the setM
 
 ### 6.2. The launch.json file
 
-Next we need to create a `launch.json` file for our debugger to know which file to execute when we hit run. 
+Next, we need to create a `launch.json` file for our debugger to know which file to execute when we hit run. 
 
 Head over to the debug tab within VS code and create a `launch.json` file.
 
@@ -218,7 +225,7 @@ That's right, we still have to tell VS Code to which Adobe host application it s
 
 <img src='./assets/vs-code-select-target-application.jpg' width='600px'>
 
-This should bring up the following dialog which will detect what Adobe application you have installed and allow you to select thm as a target. Make sure the target application you want to select is open, and then select the target. For me today the target will be `Adobe Premiere Pr CC 2019`. You should then see the yellow text `Select the target application` change to your selected target. 
+This should bring up the following dialogue which will detect what Adobe application you have installed and allow you to select them as a target. Make sure the target application you want to select is open, and then select the target. For me today the target will be `Adobe Premiere Pr CC 2019`. You should then see the yellow text `Select the target application` change to your selected target. 
 
 <img src='./assets/vs-code-select-target-application-options.jpg' width='600px'>
 
@@ -246,8 +253,9 @@ You might want to change your `launch.json` file to
 }
 ```
 
-This way you won't have to paste the filename into the dialog every time. 
+This way you won't have to paste the filename into the dialogue every time. 
 
 Change the last line in your `muteTrack1.jsx` file to `firstTrack.setMute(false);` and see what happens when you execute it again.
 
 ## 7 Conclusion
+
