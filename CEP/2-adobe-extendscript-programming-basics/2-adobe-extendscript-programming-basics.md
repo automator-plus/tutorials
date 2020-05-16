@@ -41,8 +41,19 @@ Great! Maybe you didn't know that all browsers have a JavaSript console built-in
 
 ### Hallo World
 
-There is a coding tradition that the first program you write in any new language has something to do printing out or displaying the text "hallo world". At the bottom of your console, next ot the `>`-character, 
+There is a coding tradition that the first program you write in any new language has something to do printing out or displaying the text "hallo world". At the bottom of your console, next ot the `>`-character is where we're going to be writing some code.
 
 <p align="center">
-  <img src='./assets/console-cli.gif' width='400px'>
+  <img src='./assets/where-to-type.gif' width='530px'>
 </p>
+
+Execute the following command in the console:
+
+```javascript
+console.log("Hallo World");
+```
+
+<p align="center">
+  <img src='./assets/hallo-world.gif' width='530px'>
+</p>
+
