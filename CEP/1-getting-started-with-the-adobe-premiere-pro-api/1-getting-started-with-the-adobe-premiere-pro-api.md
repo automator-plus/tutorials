@@ -9,7 +9,7 @@
 
 ## 1. Introduction
 
-In this tutorial we'll go through the basic steps you'll need to get up and running with executing ExtendScript code from within VS Code against Adobe Premiere Pro as a host. If not all of that made sense, stick around.
+In this tutorial we'll go through the basic steps you'll need to get up and running with executing [ExtendScript](https://en.wikipedia.org/wiki/ExtendScript) code from within [VS Code](https://code.visualstudio.com/) against Adobe Premiere Pro as a host. If not all of that made sense, stick around.
 
  Whether this is your first time having a go at programming something in Adobe's ExtendScript language or if you're already a seasoned ExtendScript programmer, welcome. Irrespective of the extent of your programming knowledge, we hope to show you a few examples of how you can take control of your Adobe applications through code. Once you get the hang of it you can start putting together some supra-natural pipelines and automations. 
 
@@ -22,19 +22,21 @@ In this tutorial we'll go through the basic steps you'll need to get up and runn
 
 ## 2. What we'll cover
 
-In this tutorial, we'll not only show you how to use the Premiere Pro API but also give you some background knowledge about how the system is put together behind the scenes to give you some intuition about how your code is executing. Having an understanding of what is executing what where will help when things go wrong. 
+In this tutorial, we'll not only show you how to use the <a href='http://ppro.aenhancers.com'>Premiere Pro API</a> but also give you some background knowledge about how the ExtendScript system is put together behind the scenes to give you some intuition about how your code is executing. Having an understanding of what is executing what where will help when things go wrong. 
 
 In this tutorial, we'll cover: 
 
 <ul>
-    <li>Installing <a href='https://code.visualstudio.com/'>VS Code</a> - the preferred Integrated Development Environment (<a href='https://en.wikipedia.org/wiki/Integrated_development_environment'>IDE</a>) for programming the Adobe ExtendScript language.</li>
-    <li>Installing the official Adobe ExtendScript VS Code Debugger Extension.</li>
+    <li>Installing <a href='https://code.visualstudio.com/'>VS Code</a> - the preferred Integrated Development Environment (IDE) for programming the Adobe ExtendScript language.</li>
+    <li>Installing the official Adobe <a href='https://medium.com/adobetech/extendscript-debugger-for-visual-studio-code-public-release-a2ff6161fa01'>ExtendScript VS Code Debugger Extension</a>.</li>
+    <li>What is an <a href='https://en.wikipedia.org/wiki/Integrated_development_environment'>IDE</a>?</li>
+    <li>What is an <a href="https://en.wikipedia.org/wiki/Application_programming_interface">API</a>? </li>
     <li>The Basics of the Adobe Premiere Pro API.</li>
-    <li>Setting up the VS Code ExtendScript Debugger.</li>
+    <li>Setting up the <a href='https://marketplace.visualstudio.com/items?itemName=Adobe.extendscript-debug'>ExtendScript VS Code Debugger Extension</a>.</li>
     <li>Running some basic Premiere Pro API code from within VS Code.</li>
 </ul>
 
- If you've never coded in you're life, don't worry! And if acronyms like IDE and API are still a bit foreign to you, great! Then you might actually learn something... If you already know these terms, we still hope we can teach you something. Ultimately, we want to bring you the knowledge that will show you how to unlock the superpowers that programming the Adobe suite unlocks.
+ If you've never coded in you're life, don't worry! And if acronyms like IDE and API are still a bit foreign to you, great! Then you might actually learn something... If you already know these terms, we still hope we can teach you something you don't already know. Ultimately, with this tutorial series, we want to bring you the knowledge that will show you how to unlock the superpowers that programming the Adobe suite unlocks.
 
  ## 3. What is an IDE
 
@@ -44,25 +46,36 @@ Luckily, Adobe has made the best choice for us all by releasing an open-source V
 
 For the non-programming folk, open-source software is essentially free software, well sort off. The code is freely available for you to use and abuse. To get an idea of what open-source software entails, you can think of projects like JavaScript, <a href='https://www.python.org/'>Python</a> or <a href='https://www.linux.org/'>Linux</a>. You don't need to buy a license from the creators to build products using any of these projects. 
 
-You might think why would Adobe make software available for free and not charge for it. Well, they've learned from the rest of the world that the only way to have a stable code base is to make your code open-source that the open-source community, you and I, can build, test and deploy useful add-ons to their software without any cost to them. So open source isn't completely free, Adobe still employs many software engineers to write and maintain the CEP API, however, the benefit that Adobe gets by having the entire world test their code base and create new plug-ins outweighs the costs tenfold. 
+You might think why would Adobe make software available for free and not charge for it. Well, they've learned from the rest of the world that the only way to have a stable code base is to make your code open-source so that the open-source community, you and I, can build, test and deploy useful add-ons to their software without any cost to them. So open source isn't completely free, Adobe still employs many software engineers to write and maintain the CEP API, however, the benefit that Adobe gets by having the entire world test their code base and create new plug-ins outweighs the costs tenfold. 
 
 ## 4. The Premiere Pro API
 
 ### 4.1. What is an API
 
-An API or Application Programming Interface is a set of functions that allows interaction with an application. Basically, a defined list of commands that tell you how to call the functions, and what you can expect in return. 
+An API or Application Programming Interface is a defined set of functions that allows interaction with an application. Basically, a list of commands that tell you how do things with an application, in our case Premiere Pro. 
+
+If you think of your dog as Premiere Pro, then API commands would be things like "Sit", "Bark", "Chew Shoes", etc. Lets extend this  with a short hypothetical code example for our "dog API". 
+
+```javascript
+jake = new Dog(name="Jake", bread="German Shepherd");
+jake.sit(); //Jake sits
+jake.bark(loudness=0.8); //Jake barks at 80% loudness
+jake.chewShoes(whos="Lilly"); //Jake chews Lilly's shoes
+```
+
+Don't worry if this code doesn't make sense, it can't, it's not real code. It's what is referred to as <a href='https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/'>pseudo code</a> which is like a scamp of your code. It conveys the gist of what you'd want to achieve without worrying about syntax or if will execute. Pro tip, try and first write what you want to achieve as pseudo code before coding it up.
 
 This defined list of commands for an API is usually called <i>documentation</i> and the API documentation for the Premiere Pro API can be found at http://ppro.aenhancers.com. If you head over to http://ppro.aenhancers.com you'll see something similar to the image below. 
 
 <img src="./assets/PP_mute_api_example.jpg" width="100%">
 
-The documentation shows us that we can execute the <code>setMute()</code> function (or method) if we have a `Track Object`. 
+The extracted documentation above shows us that we can execute the <code>setMute()</code> function if we have a `Track Object`. 
 
-Again, if this is not making sense, don't worry we'll unpack all of it. However, something to note, is that the documentation for especially the Premiere Pro API is sometimes a bit outdated or faulty. For example, the `setMute()` method shown in the image above takes 1 parameter, `isMuted`. However, the main definition is missing the argument, as shown below, making it a bit confusing.
+Again, if this is not making sense, don't worry we'll unpack all of it throughout the series. However, something to note, is that the documentation for especially the Premiere Pro API is sometimes a bit outdated or faulty. For example, the `setMute()` method shown in the image above takes 1 parameter, `isMuted`. However, the main definition is missing the argument, as shown below, making it a bit confusing.
 
 <img src="./assets/PP_mute_api_example_fix.jpg">
 
-Also _all_ the available methods aren't always documented in the main API documentation - this is, unfortunately, the other side of the open-source community, it's up to us to improve discrepancies like this. Luckily, Adobe is always keen to help and they've got a dedicated guy looking out for the Premiere Pro API concerns, Bruce Bullis. You can drop him a mail if you have any question at bbb@adobe.com and he usually comes back within a few days with some advice or points you in a direction.
+Also, _all_ the available methods aren't always documented in the main API documentation - this is, unfortunately, the other side of the open-source community. Things are usually screened, but as the API changes, documentation isn't always kept up to date and it's up to us, the open source community, to improve discrepancies like this. Luckily, Adobe is always keen to help and they've got a dedicated guy looking out for the Premiere Pro API concerns, Bruce Bullis. You can drop him a mail if you have any question at bbb@adobe.com and he usually comes back within a few days with some advice or points you in a direction. You'll also see him very active on the Adobe API forums. 
 
 
 ### 4.2. How everything fits together
@@ -78,8 +91,8 @@ Let's look at how the various components fit together to get you up and running 
         <td style="text-align:right"><img src='./assets/hostLogo.png' width='140px'></td>
         <td><b>The host - any Adobe application</b> 
         <br><br>
-        Get used to calling your Adobe applications like Premiere Pro, Photoshop or After Effect the <i>host</i> application. This is to make a distinction between the client (the code we'll be writing) and the Adobe application we're interacting with - the host.<br><br>
-        For now we'll just be executing our ExtendScript from VS Code, so our client will be VS Code. However, if you start building extensions to make your ExtendScript more usable, then your HTML extension panel will be the client.<br><br></td>
+        Get used to calling your Adobe applications like Premiere Pro, Photoshop or After Effects the <i>host</i> application. This is to make a distinction between the client (the code we'll be writing) and the Adobe application we're interacting with - the host.<br><br>
+        For now we'll just be executing our ExtendScript from VS Code, so our client will be VS Code. However, if you start building extensions to make your ExtendScript more reusable, then your HTML extension panel will be the client.<br><br></td>
     </tr>
     <tr>
         <td style="text-align:right"><img src='./assets/vsCodeLogo.png' width='70px'></td>
@@ -252,10 +265,21 @@ You might want to change your `launch.json` file to
     ]
 }
 ```
-
+****
 This way you won't have to paste the filename into the dialogue every time. 
 
 Change the last line in your `muteTrack1.jsx` file to `firstTrack.setMute(false);` and see what happens when you execute it again.
 
 ## 7 Conclusion
 
+Depending on where you are on your coding journey, this tutorial covered a few novel concepts or a lot of novel concepts, here is a summary of what we looked at. 
+
+We covered what an IDE is and how VS Code has replaced Adobe's ExtendSCript Toolkit UI as the default IDE to develop ExtendScript - Adobe's extended JavaScript language used to control their applications via an API. 
+
+We briefly touched on what an API is and how you could possibly control the loudness of your dog's bark using one. 
+
+We then looked at how the host application, VS Code, your code and the VS Code ExtendScript Debugger all fit together. 
+
+After installing VS Code and the debugger we created a workspace folder in VS Code and added a `launch.json` file to enable us to execute some code. 
+
+We finished-up by attaching a host application to VS Code and muting the first video track.
