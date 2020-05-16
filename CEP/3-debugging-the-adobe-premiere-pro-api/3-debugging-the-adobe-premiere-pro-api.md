@@ -1,5 +1,30 @@
 # 3 Debugging the Adobe Premiere Pro API
 
+<p align="center">
+  <img src='./assets/debug.jpg' width='640px'>
+</p>
+
+- [3 Debugging the Adobe Premiere Pro API](#3-debugging-the-adobe-premiere-pro-api)
+  - [1. Introduction](#1-introduction)
+  - [2. Debugging](#2-debugging)
+    - [2.1 What is a debugger](#21-what-is-a-debugger)
+    - [Breakpoints](#breakpoints)
+    - [Variable inspector](#variable-inspector)
+  - [3. Premiere Pro building blocks](#3-premiere-pro-building-blocks)
+    - [3.1. Objects in Programming](#31-objects-in-programming)
+      - [JSON](#json)
+      - [Classes](#classes)
+    - [3.2. Premiere Pro Objects](#32-premiere-pro-objects)
+      - [App Object](#app-object)
+      - [Project Object](#project-object)
+      - [Project Item Object](#project-item-object)
+      - [Sequence Object](#sequence-object)
+      - [Track Object](#track-object)
+      - [Track Item Object](#track-item-object)
+      - [Marker Object](#marker-object)
+      - [Ticks](#ticks)
+  - [A more challenging Example](#a-more-challenging-example)
+
 ## 1. Introduction
 
 This tutorial assumes you've got VS Code installed as well as the VS Code Adobe ExtendScript Debugger. You can install VS Code <a href=''>here</a> and the ExtendScript Debugger <a href=''>here</a>. We've got a video and tutorial about it <a href=''>here</a> if you first want to check that out. If you're coming from the previous tutorial - God-speed captain!
@@ -15,11 +40,9 @@ In this tutorial we'll:
 
 ## 2. Debugging
 
-<img src='./assets/debug.jpg' width='640px'>
-
 ### 2.1 What is a debugger
 
-Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, this is using a different IDE to debug the solidity Ethereum language. I just want to share the first paragraph: 
+Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉👆. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, this is using a different IDE to debug the solidity Ethereum language. I just want to share the first paragraph: 
 
 > Bugs! Bugs are aliens that creep into a programmer’s code at night when no one is watching and alter the state of working code. These aliens have only one mission — to frustrate the life of a programmer. How does a programmer kill a bug before he dies of frustration? Yeah, you got it right! By debugging and removing the buggy code. But why would a programmer go into a debugging war without the right tools? If a programmer is going to debug he better do it the right way, using the right tools.
 
