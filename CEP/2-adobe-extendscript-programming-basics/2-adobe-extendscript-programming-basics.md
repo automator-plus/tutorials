@@ -28,11 +28,11 @@ However, all of this ECMA stuff only becomes important when you're getting serio
 
 ## Writing JavaScript in Chrome
 
-Since the core JS syntax like declaring a variable, adding numbers together or printing something out to the console hasn't changed much over time, we can hop into our Chrome debugger, which will give us an easy place to write some JS code and explain the above concepts. To open a console in Chrome, right-click anywhere on an open webpage and click `Inspect`. This should bring up the Chrome Inspector and you're going to want to go to the `Console` tab shown below. Depending on which webpage you open your inspector your warning and error messages might differ. 
+Since the core JS syntax like declaring a variable, adding numbers together or printing something out to the console hasn't changed much over time, we can hop into our Chrome debugger, which will give us an easy place to write some JS code and explain the above concepts. To open a console in Chrome, right-click anywhere on an open webpage and click `Inspect`. I show this below, but you're going to have to excuse my Dutch. Clicking on `Inspect` should bring up the the `Chrome Inspector` and you're going to want to go to the `Console` tab shown below. Depending on which web page you opened your inspector in, your warning and error messages might differ. 
 
 
 <p align="center">
-  <img src='./assets/chrome-inspector.jpg' width='400px'>
+  <img src='./assets/chrome-inspector.jpg' width='100%'>
 </p>
 
 
