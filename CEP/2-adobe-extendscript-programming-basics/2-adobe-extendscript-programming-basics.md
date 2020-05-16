@@ -57,3 +57,61 @@ console.log("Hallo World");
   <img src='./assets/hallo-world.gif' width='530px'>
 </p>
 
+Let's unpack what is happening here. We've used the built in JS function `console.log` to print out "Hallo World" to the console. Pretty intuitive right? Let's go a step further. 
+
+
+### Variables
+
+Variables... What are variables? 
+
+Essentially variables are placeholders, things that house values for us that change (are variable) over time. For example, below we will declare 2 variables called `a` and `b`. These names are completely arbitrary and it is up to you to choose meaningful variable names - `a` and `b` are bad variable name BTW - we improve them later. 
+
+In JavaScript we declare variables using the `var` keyword, like `var a = 1`. OK, you don't have to type `var`, `a = 1` will work just fine. However, this is where those ECMA Script version snags come in. In ES3 it is fine to declare your variables without using `var`, however if you're going to be transpiling code from ES6 to ES3, you're going to need the `var` keyword. 
+
+Small things like this give the later versions of ECMAScript its robustness. In the background JavaScript can do a lot more checks and balances if you _explicitoly_ declare what type of variable you are declaring. A variable that will change over time, or a variable that will stay constent. In the later versions of ECMAScript there's a distinction, for example:
+
+```javascript
+var a = 3;
+const b = 4;
+```
+
+If you later want to reassign `b` an error will be thrown,
+
+<p align="center">
+  <img src='./assets/const-b.gif' width='530px'>
+</p>
+
+Compared to assigning a value to `a`,
+
+<p align="center">
+  <img src='./assets/var-a.gif' width='530px'>
+</p>
+
+However, if you type nothing, 
+
+```javascript
+a = 3;
+b = 4;
+```
+
+anything can really be done with your variable downstream. So where does this leave you? Rather use `var` instead of nothing. This way you can use you're code later on if you start using transpilers, also, it's only 4 characters and a good JS coding habit to form. Until you know why the other keywords exists and know why you need them, just use `var`. 
+
+Ok, so variable hold values. But why? Well, to make programming more modular and easier to write. To bring it back to the Premiere Pro API,  instead of writing:
+
+```javascript
+app.project.activeSequence.videoTracks[0].setMute(true);
+```
+
+We can be a bit more verbose, declaring intermediary variables to store our sub computations and make the code more readable, maintainable and ultimately suistainable. 
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks; // Get all the video tracks
+firstTrack = videoTracks[0]; // Get the first video track
+firstTrack.setMute(true); // Set the firstTrack's muted attribute using the setMute method
+```
+
+But what about efficiency I hear you say? Doesn't declaring more variable take up more space in memory? In the background JS doens't really need *that* much more space to store your extra variable because of what are called pointers. With most *big* things we want to store in variables, we only store them in one place and then *point* to them. Pointers are way outside of the scope this series, but just some motivation as to why more variables are usualy a good things if you're code is more readiable and understandable. 
+
+Someone once said: "machines don't read code, humans do."
+
+
