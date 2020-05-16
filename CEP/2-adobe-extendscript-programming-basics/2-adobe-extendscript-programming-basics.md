@@ -36,4 +36,13 @@ Since the core JS syntax like declaring a variable, adding numbers together or p
 </p>
 
 
-Great! Maybe you didn't know that all browsers have a JavaSript console built-in. BTW they do, sometimes it is just a bit tricky to get to them. I know with Safari on Mac you've got to enable "Developer Tools". The interface you are presented with, the image shown above, is what we call a <a href='https://en.wikipedia.org/wiki/Command-line_interface'>Command Line Interface</a> (CLI) as opposed to a <a href='https://en.wikipedia.org/wiki/Graphical_user_interface'>Graphical User Interface</a> (GUI). The difference? The one uses pictures, the other uses text. for reference, the `console` is also sometimes referred to as the `terminal` or just CLI. 
+Great! Maybe you didn't know that all browsers have a JavaSript console built-in. BTW they do, sometimes it is just a bit tricky to get to them. I know with Safari on Mac you've got to enable "Developer Tools". The interface you are presented with, the image shown above, is what we call a <a href='https://en.wikipedia.org/wiki/Command-line_interface'>Command Line Interface</a> (CLI) as opposed to a <a href='https://en.wikipedia.org/wiki/Graphical_user_interface'>Graphical User Interface</a> (GUI). The difference? The one uses pictures, the other uses text. for reference, the `console` is also sometimes referred to as the `terminal` or just `CLI`. 
+
+
+### Hallo World
+
+There is a coding tradition that the first program you write in any new language has something to do printing out or displaying the text "hallo world". At the bottom of your console, next ot the `>`-character, 
+
+<p align="center">
+  <img src='./assets/console-cli.gif' width='400px'>
+</p>
