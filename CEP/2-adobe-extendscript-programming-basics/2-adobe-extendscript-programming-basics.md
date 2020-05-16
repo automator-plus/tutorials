@@ -1,4 +1,4 @@
-# 3 ExtendScript and JavaScript Programming Basics
+# 2 ExtendScript Programming Basics
 
 ## History of JS
 
