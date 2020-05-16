@@ -41,6 +41,8 @@ Great! Maybe you didn't know that all browsers have a JavaSript console built-in
 
 ### Hallo World
 
+If you can code JavaScript the following section is not for you, the next bit covers the basics of JavaScript like what is variable, variable types, conditionals, JSON objects and functions. If you know these words well, you need not proceed, if not please read worth.
+
 There is a coding tradition that the first program you write in any new language has something to do printing out or displaying the text "hallo world". At the bottom of your console, next ot the `>`-character is where we're going to be writing some code.
 
 <p align="center">
@@ -159,3 +161,24 @@ console.log(typeof(numberNumber))
   <img src='./assets/type-checking.gif' width='530px'>
 </p>
 
+#### If Statements
+
+AND and OR, Braces and equality
+
+&&, {}, ===, 
+
+#### For Loops
+
+?
+
+#### Objects
+
+JSON
+
+console.dir()
+
+#### Functions
+
+### Something with PP API
+
+A script that colors all the clips on the muted tracks maybe? 
