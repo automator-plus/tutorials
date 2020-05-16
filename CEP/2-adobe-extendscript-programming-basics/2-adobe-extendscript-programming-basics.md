@@ -28,11 +28,12 @@ However, all of this ECMA stuff only becomes important when you're getting serio
 
 ## Writing JavaScript in Chrome
 
-Since the core JS syntax like declaring a variable, adding numbers together or printing something out to the console hasn't changed much over time, we can hop into our Chrome debugger, which will give us an easy place to write some JS code and explain the above concepts. To open a concole in Chrome, right-click anywhere on an open webpage and click `Inspect`. This should bring up the Chrome Inspector looking something like: 
+Since the core JS syntax like declaring a variable, adding numbers together or printing something out to the console hasn't changed much over time, we can hop into our Chrome debugger, which will give us an easy place to write some JS code and explain the above concepts. To open a concole in Chrome, right-click anywhere on an open webpage and click `Inspect`. This should bring up the Chrome Inspector and you're going to want to go to the `Console` tab shown below. Depending on which webpage you open you inspector your warning and error messages might differ. 
 
 
 <p align="center">
-
   <img src='./assets/chrome-inspector.jpg' width='400px'>
-  
 </p>
+
+
+Great! Maybe you didn't know that all browsers have a JavaSript console built in. BTW they do, sometimes there just a bit tricky to get to. I know with Safari on Mac you've got to enable "Developer Tools". The interface you are presented with, the image shown above, is what we call a <a href='https://en.wikipedia.org/wiki/Command-line_interface'>Command Line Interface</a> (CLI) as oppsed to a <a href='https://en.wikipedia.org/wiki/Graphical_user_interface'>Graphical User Interface</a> (GUI). The difference? The one uses pictures, the other uses text. for reference the `console` is also sometime refered to as the `terminal` or just CLI. 
