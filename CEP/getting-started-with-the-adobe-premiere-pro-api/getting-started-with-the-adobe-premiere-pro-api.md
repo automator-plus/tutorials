@@ -1,11 +1,11 @@
-# Tutorial 1: Getting Started with Adobe ExtendScript in Premiere Pro
+# Getting Started with Adobe ExtendScript in Premiere Pro
 
 <p align="center">
   <img src='./assets/cover-image.jpg'>
   <cite>Photo by <a href='https://unsplash.com/@peter_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Peter Stumpf</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
 </p>
 
-- [Tutorial 1: Getting Started with Adobe ExtendScript in Premiere Pro](#tutorial-1-getting-started-with-adobe-extendscript-in-premiere-pro)
+- [Getting Started with Adobe ExtendScript in Premiere Pro](#getting-started-with-adobe-extendscript-in-premiere-pro)
   - [Introduction](#introduction)
   - [What we'll cover](#what-well-cover)
   - [What is an IDE](#what-is-an-ide)

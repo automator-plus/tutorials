@@ -1,5 +1,11 @@
 # Automator Plus Tutorials
 
+<p align="center">
+  <img src='./assets/cover-image.jpg'>
+  <cite>Photo by <a href='https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Fotis Fotopoulos</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
+</p>
+
+
 Welcome to the Automator Plus tutorials GitHub repository. Here you'll find all code resources associated with the tutorial videos released on our YouTube channel.
 
 Currently, we have tutorials for creating Adobe Premiere Pro automations on Windows using <a href='https://www.autohotkey.com/'>AutoHotkey</a> as well as using the <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> API any either Windows or Mac and interact with and create extensions for Premiere Pro. Although the methods we discuss are applicable for any Adobe Creative Cloud applications.
@@ -22,6 +28,3 @@ We've got a YouTube playlist with all the videos for the following tutorials:
 + <a href="./CEP/getting-started-with-the-adobe-premiere-pro-api/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started with the Adobe Premiere Pro API</a>
 + <a href="./CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md">Adobe ExtendScript Programming Basics</a>
 + <a href="./CEP/debugging-the-adobe-premiere-pro-api/debugging-the-adobe-premiere-pro-api.md">Debugging the Adobe Premiere Pro Api</a>
-+ <a href="./CEP/more-advanced-adobe-premiere-pro-api-examples/more-advanced-adobe-premiere-pro-api-examples.md">More Advanced Adobe Premiere Pro API Examples</a>
-+ <a href="./CEP/making-an-adobe-premiere-pro-extension/making-an-adobe-premiere-pro-extension.md">Making an Adobe Premiere Pro Extension</a>
-+ <a href="./CEP/adobe-premiere-pro-api-clip-analysis/adobe-premiere-pro-api-clip-analysis.md">Adobe Premiere Pro API Clip Analysis</a>

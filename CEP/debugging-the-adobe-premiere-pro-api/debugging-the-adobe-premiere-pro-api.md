@@ -1,20 +1,20 @@
-# 3 Debugging the Adobe Premiere Pro API
+# Debugging the Adobe Premiere Pro API
 
 <p align="center">
   <img src='./assets/debug.jpg' width='640px'>
 </p>
 
-- [3 Debugging the Adobe Premiere Pro API](#3-debugging-the-adobe-premiere-pro-api)
-  - [1. Introduction](#1-introduction)
-  - [2. Debugging](#2-debugging)
-    - [2.1 What is a debugger](#21-what-is-a-debugger)
+- [Debugging the Adobe Premiere Pro API](#debugging-the-adobe-premiere-pro-api)
+  - [Introduction](#introduction)
+  - [Debugging](#debugging)
+    - [What is a debugger](#what-is-a-debugger)
     - [Breakpoints](#breakpoints)
     - [Variable inspector](#variable-inspector)
-  - [3. Premiere Pro building blocks](#3-premiere-pro-building-blocks)
-    - [3.1. Objects in Programming](#31-objects-in-programming)
+  - [Premiere Pro building blocks](#premiere-pro-building-blocks)
+    - [Objects in Programming](#objects-in-programming)
       - [JSON](#json)
       - [Classes](#classes)
-    - [3.2. Premiere Pro Objects](#32-premiere-pro-objects)
+    - [Premiere Pro Objects](#premiere-pro-objects)
       - [App Object](#app-object)
       - [Project Object](#project-object)
       - [Project Item Object](#project-item-object)
@@ -25,7 +25,7 @@
       - [Ticks](#ticks)
   - [A more challenging Example](#a-more-challenging-example)
 
-## 1. Introduction
+## Introduction
 
 This tutorial assumes you've got VS Code installed as well as the VS Code Adobe ExtendScript Debugger. You can install VS Code <a href=''>here</a> and the ExtendScript Debugger <a href=''>here</a>. We've got a video and tutorial about it <a href=''>here</a> if you first want to check that out. If you're coming from the previous tutorial - God-speed captain!
 
@@ -38,9 +38,9 @@ In this tutorial we'll:
 + Look at some of the Premiere Pro building blocks
 + Create a script that inserts markers at specified frame or seconds intervals
 
-## 2. Debugging
+## Debugging
 
-### 2.1 What is a debugger
+### What is a debugger
 
 Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉👆. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, this is using a different IDE to debug the solidity Ethereum language. I just want to share the first paragraph: 
 
@@ -170,9 +170,9 @@ We can't talk about debugging in VS Code without talking about the `./launch.jso
 
 ### Variable inspector 
 
-## 3. Premiere Pro building blocks
+## Premiere Pro building blocks
 
-### 3.1. Objects in Programming
+### Objects in Programming
 
 #### JSON
 
@@ -182,7 +182,7 @@ PPE on debugger for various PP Classes
 
 getters, setters
 
-### 3.2. Premiere Pro Objects
+### Premiere Pro Objects
 
 #### App Object
 #### Project Object

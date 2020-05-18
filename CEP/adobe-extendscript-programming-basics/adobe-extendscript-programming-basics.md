@@ -1,8 +1,22 @@
-# Tutorial 2: Adobe's ExtendScript Programming Basics
+# Adobe's ExtendScript Programming Basics
+
+
 <p align="center">
   <img src='./assets/cover-image.jpg'>
   <cite>Photo by <a href='https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Fotis Fotopoulos</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
 </p>
+
+- [Adobe's ExtendScript Programming Basics](#adobes-extendscript-programming-basics)
+  - [History of JS and Adobe's Extend Script](#history-of-js-and-adobes-extend-script)
+  - [Writing JavaScript in Chrome](#writing-javascript-in-chrome)
+    - [Hallo World](#hallo-world)
+    - [Variables](#variables)
+    - [Variable Types](#variable-types)
+      - [If Statements](#if-statements)
+      - [For Loops](#for-loops)
+      - [Objects](#objects)
+      - [Functions](#functions)
+    - [Something with PP API](#something-with-pp-api)
 
 ## History of JS and Adobe's Extend Script
 
