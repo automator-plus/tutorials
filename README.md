@@ -19,11 +19,9 @@ As with everything in life, whatever tools works for you and solves your problem
 
 We've got a YouTube playlist with all the videos for the following tutorials:
 
-<div style="color:red">Not sure about numbers for videos?</div>
-
-+ <a href="./CEP/1-getting-started-with-the-adobe-premiere-pro-api/1-getting-started-with-the-adobe-premiere-pro-api.md">1 Getting Started with the Adobe Premiere Pro API</a>
-+ <a href="./CEP/2-adobe-extendscript-programming-basics/2-adobe-extendscript-programming-basics.md">2 Adobe Extendscript Programming Basics</a>
-+ <a href="./CEP/3-debugging-the-adobe-premiere-pro-api/3-debugging-the-adobe-premiere-pro-api.md">3 Debugging the Adobe Premiere Pro Api</a>
-+ <a href="./CEP/4-more-advanced-adobe-premiere-pro-api-examples/4-more-advanced-adobe-premiere-pro-api-examples.md">4 More Advanced Adobe Premiere Pro API Examples</a>
-+ <a href="./CEP/5-making-an-adobe-premiere-pro-extension/5-making-an-adobe-premiere-pro-extension.md">5 Making an Adobe Premiere Pro Extension</a>
-+ <a href="./CEP/6-adobe-premiere-pro-api-clip-analysis/6-adobe-premiere-pro-api-clip-analysis.md">6 Adobe Premiere Pro API Clip Analysis</a>
++ <a href="./CEP/getting-started-with-the-adobe-premiere-pro-api/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started with the Adobe Premiere Pro API</a>
++ <a href="./CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md">Adobe ExtendScript Programming Basics</a>
++ <a href="./CEP/debugging-the-adobe-premiere-pro-api/debugging-the-adobe-premiere-pro-api.md">Debugging the Adobe Premiere Pro Api</a>
++ <a href="./CEP/more-advanced-adobe-premiere-pro-api-examples/more-advanced-adobe-premiere-pro-api-examples.md">More Advanced Adobe Premiere Pro API Examples</a>
++ <a href="./CEP/making-an-adobe-premiere-pro-extension/making-an-adobe-premiere-pro-extension.md">Making an Adobe Premiere Pro Extension</a>
++ <a href="./CEP/adobe-premiere-pro-api-clip-analysis/adobe-premiere-pro-api-clip-analysis.md">Adobe Premiere Pro API Clip Analysis</a>

@@ -7,8 +7,22 @@
         {
             "type": "extendscript-debug",
             "request": "launch",
-            "name": "Ask for script name",
-            "program": "${workspaceFolder}/${command:AskForScriptName}",
+            "name": "Alter in and out points",
+            "program": "${workspaceFolder}/CEP/quickies/alterInOutPoints.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Insert Clip",
+            "program": "${workspaceFolder}/CEP/quickies/insertClip.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Insert Clip Tracks",
+            "program": "${workspaceFolder}/CEP/quickies/insertClipTracks.jsx",
             "stopOnEntry": false
         }
     ]
