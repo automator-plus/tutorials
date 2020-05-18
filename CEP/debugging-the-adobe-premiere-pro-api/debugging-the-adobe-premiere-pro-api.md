@@ -10,20 +10,6 @@
     - [What is a debugger](#what-is-a-debugger)
     - [Breakpoints](#breakpoints)
     - [Variable inspector](#variable-inspector)
-  - [Premiere Pro building blocks](#premiere-pro-building-blocks)
-    - [Objects in Programming](#objects-in-programming)
-      - [JSON](#json)
-      - [Classes](#classes)
-    - [Premiere Pro Objects](#premiere-pro-objects)
-      - [App Object](#app-object)
-      - [Project Object](#project-object)
-      - [Project Item Object](#project-item-object)
-      - [Sequence Object](#sequence-object)
-      - [Track Object](#track-object)
-      - [Track Item Object](#track-item-object)
-      - [Marker Object](#marker-object)
-      - [Ticks](#ticks)
-  - [A more challenging Example](#a-more-challenging-example)
 
 ## Introduction
 
@@ -170,31 +156,3 @@ We can't talk about debugging in VS Code without talking about the `./launch.jso
 
 ### Variable inspector 
 
-## Premiere Pro building blocks
-
-### Objects in Programming
-
-#### JSON
-
-PPE on debugger for various PP Classes
-
-#### Classes 
-
-getters, setters
-
-### Premiere Pro Objects
-
-#### App Object
-#### Project Object
-#### Project Item Object
-#### Sequence Object
-#### Track Object
-#### Track Item Object
-#### Marker Object
-#### Ticks
-
-Adobe allows broad control over the entire Premiere Pro application via an ExtendScript-based API. ExtendScript can access and alter of most project elements, including metadata, exporting and rendering options. Whttp://ppro.aenhancers.com/index.html
-
-## A more challenging Example
-
-Insert markers at every X frames or Y seconds in the sequence's frame rate.
