@@ -28,3 +28,4 @@ We've got a YouTube playlist with all the videos for the following tutorials:
 + <a href="./CEP/getting-started-with-the-adobe-premiere-pro-api/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started with the Adobe Premiere Pro API</a>
 + <a href="./CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md">Adobe ExtendScript Programming Basics</a>
 + <a href="./CEP/debugging-the-adobe-premiere-pro-api/debugging-the-adobe-premiere-pro-api.md">Debugging the Adobe Premiere Pro Api</a>
++ <a href="./CEP/making-a-adobe-premiere-pro-extension/making-a-adobe-premiere-pro-extension.md">Making a Adobe Premiere Pro Extension</a>
