@@ -666,7 +666,7 @@ for (var clip in clips) {
 }
 ```
  
-Hopefully, after this tutorial, you can look at this bit of code and at least understand what is doing. Don't worry if you can't remember the syntax exactly, that's what Google is for. Seriously, no programmer can code without internet access, maybe if they have the instruction manual next to them. 
+Hopefully, after this tutorial, you can look at this bit of code and at least understand what the code is doing. Don't worry if you can't remember the syntax exactly, that's what Google is for. Seriously, no programmer can code without internet access, maybe if they have the instruction manual next to them. 
 
 But more often than not you'll find yourself Googling:
 
