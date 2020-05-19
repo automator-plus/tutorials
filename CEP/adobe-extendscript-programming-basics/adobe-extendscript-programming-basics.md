@@ -284,7 +284,7 @@ for (var clip in clips) {
 }
 ```
 
-Not making any sense? Don't worry! Think about how long it took you to write your first diary entry in English. Luckily, this time around you can already spell English words, you just need to learn the terms you are allowed to use and the "grammar" of stringing these terms and concepts together in JavaScript. 
+Not making any sense? Don't worry! How long it took you to write your first diary entry in English? Luckily, this time around you can already spell English words, you just need to learn the terms you are allowed to use and the "grammar" of stringing these terms and concepts together in JavaScript. 
 
 For the inquisitive, the code above does the following:
 + Declare a variable called `durationThreshold` and set it equal to the value of `10`.
