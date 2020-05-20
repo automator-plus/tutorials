@@ -54,6 +54,8 @@ Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaN
 + <a href="./CEP/getting-started-with-the-adobe-premiere-pro-api/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started with the Adobe Premiere Pro API</a>
 + <a href="./CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md">Adobe ExtendScript Programming Basics</a>
 + <a href="./CEP/debugging-the-adobe-premiere-pro-api/debugging-the-adobe-premiere-pro-api.md">Debugging the Adobe Premiere Pro API</a>
++ <a href="./CEP/adobe-premiere-pro-API-objects/adobe-premiere-pro-API-objects.md">Adobe Premiere Pro API Objects</a>
+
 
 ## Quickies
 
