@@ -1,4 +1,4 @@
-# Automator Plus Tutorials
+<h1> Automator Plus Tutorials</h1>
 
 <p align="center">
   <img src='./assets/cover-image.jpg'>
@@ -6,11 +6,11 @@
 </p>
 
 
-Welcome to the Automator Plus tutorials GitHub repository. Here you'll find all code resources associated with the tutorial videos released on our YouTube channel.
+Welcome to the Automator Plus tutorials GitHub repository. Here you'll find all code resources associated with the tutorial videos released on  <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>our YouTube channel</a>.
 
-Currently, we have tutorials for creating Adobe Premiere Pro automations on Windows using <a href='https://www.autohotkey.com/'>AutoHotkey</a> as well as using the <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> API any either Windows or Mac and interact with and create extensions for Premiere Pro. Although the methods we discuss are applicable for any Adobe Creative Cloud applications.
+Currently, we have tutorials for creating Adobe Premiere Pro automations on Windows using <a href='https://www.autohotkey.com/'>AutoHotkey</a> as well as using the <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> API on either Windows or Mac to interact with and create extensions for Premiere Pro. Although, the methods we discuss regarding the CEP API are not only applicable to Premiere Pro, but will work for any Adobe Creative Cloud application that supports the CEP API.
 
-## AutoHotkey
+# AutoHotkey
 AutoHotkey is an easy to use, free, open-source scripting language for Microsoft Windows. With it you can create shortcuts to virtually anything and you are able to create powerful macros to automate tedious tasks. Here are a few examples:
 
 + Mapping your internet browser to a specific shortcut.
@@ -25,7 +25,7 @@ As the saying goes, there are many ways to skin a cat, and AutoHotkey is but one
 
 One of the drawbacks to using AutoHotkey is that it is OS specific, meaning you can only use it on Windows. Another drawback is that a lot of the advanced automations that we'll be writing will also be 'computer' specific - meaning that it will be a tedious task to replicate on another computer. The biggest drawback of all though, is that you have limited access to information inside of you host program. For example, you can't easily access the timecode, the in and point of clips, the amount of clips on a given timeline, etc, etc. That is where the power of CEP comes into play:
 
-## CEP 
+# CEP 
 
 Although AutoHotkey is a lot more intuitive and easier to get started with if you don't have a programming background, a method of being dependent on the OS has it's drawbacks. 
 
@@ -34,11 +34,16 @@ As with everything in life, whatever tools works for you and solves your problem
  The <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> allows us a way to program commands and actions directly into any Adobe Creative Cloud applications using a HTML5/JavaScript interface model. What this means is that with some HTML, CSS and JavaScript code you can interact with the Adobe applications and gain some super powers. 
 
 
-### Tutorials
+## Tutorials
 
-We've got a YouTube playlist with all the videos for the following tutorials:
+Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>here</a> with videos for the following tutorials:
 
 + <a href="./CEP/getting-started-with-the-adobe-premiere-pro-api/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started with the Adobe Premiere Pro API</a>
 + <a href="./CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md">Adobe ExtendScript Programming Basics</a>
 + <a href="./CEP/debugging-the-adobe-premiere-pro-api/debugging-the-adobe-premiere-pro-api.md">Debugging the Adobe Premiere Pro API</a>
-+ <a href="./CEP/adobe-premiere-pro-API-objects/adobe-premiere-pro-API-objects.md">Adobe Premiere Pro API Objects</a>
+
+## Quickies
+
+We've also got tutorials on <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>our YouTube channel</a> for the following quickies:
+
++ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/insertClip.jsx'>How to Insert a Clip in Premiere Pro</a>
