@@ -25,6 +25,10 @@
 
 ## Introduction
 
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=3YqoOo2LGsg">
+</iframe>
+
+
 In this tutorial we'll go through the basic steps you'll need to get up and running with executing [ExtendScript](https://en.wikipedia.org/wiki/ExtendScript) code from within [VS Code](https://code.visualstudio.com/) against Adobe Premiere Pro as a host. If not all of that made sense, stick around.
 
  Whether this is your first time having a go at programming something in Adobe's ExtendScript language or if you're already a seasoned ExtendScript programmer, welcome. Irrespective of the extent of your programming knowledge, we hope to show you a few examples of how you can take control of your Adobe applications through code. Once you get the hang of it you can start putting together some supra-natural pipelines and automations. 
