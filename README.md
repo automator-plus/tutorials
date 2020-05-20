@@ -5,10 +5,24 @@
   <cite>Photo by <a href='https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Fotis Fotopoulos</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
 </p>
 
+<h2>Table of Content</h2>
 
-Welcome to the Automator Plus tutorials GitHub repository. Here you'll find all code resources associated with the tutorial videos released on  <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>our YouTube channel</a>.
+- [Introduction](#introduction)
+- [AutoHotkey](#autohotkey)
+- [Adobe Common Extensibility Platform (CEP)](#adobe-common-extensibility-platform-cep)
+  - [Tutorials](#tutorials)
+  - [Quickies](#quickies)
 
-Currently, we have tutorials for creating Adobe Premiere Pro automations on Windows using <a href='https://www.autohotkey.com/'>AutoHotkey</a> as well as using the <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> API on either Windows or Mac to interact with and create extensions for Premiere Pro. Although, the methods we discuss regarding the CEP API are not only applicable to Premiere Pro but will work for any Adobe Creative Cloud application that supports the CEP API.
+# Introduction
+
+Welcome to the Automator Plus GitHub tutorial repository!
+
+Here you'll find all code resources associated with the tutorial videos released on <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>our YouTube channel</a>. 
+
+
+Our mission with this project is to bridge the gap for creatives to start programming by providing real-life examples of how a little bit of code can help you speed up and improve your photo or video editing workflow.
+
+Currently, we have tutorials for creating Adobe Premiere Pro automations on Windows using <a href='https://www.autohotkey.com/'>AutoHotkey</a> as well as using the <a href='https://github.com/Adobe-CEP/CEP-Resources'>Adobe Common Extensibility Platform (CEP)</a> API on either Windows or Mac to interact with and create extensions for Premiere Pro. The methods we discuss regarding the CEP API are not only applicable to Premiere Pro but will work for any Adobe Creative Cloud application that supports the CEP API.
 
 # AutoHotkey
 AutoHotkey is easy to use, free, open-source scripting language for Microsoft Windows. With it, you can create shortcuts to virtually anything and you can create powerful macros to automate tedious tasks. Here are a few examples:
@@ -21,7 +35,7 @@ You can download the AutoHotkey program <a href='https://www.autohotkey.com/'>he
 
 For the purpose of this channel, we'll be showing you how to use AutoHotkey to automate tedious tasks inside of Premiere Pro.
 
-As the saying goes, there are many ways to skin a cat, and AutoHotkey is but one of the tools available to automate your workflow and it has its own set of pros and cons. The biggest advantage of using AutoHotkey is that it is EASY to use. When we say easy, we mean really easy. You don't need any programming knowledge to start learning how to use AutoHotkey. 
+As the saying goes, there are many ways to skin a cat, and AutoHotkey is but one of the tools available to automate your workflow and it has its own set of pros and cons. The biggest advantage of using AutoHotkey is that it is *easy* to use. When we say easy, we mean *really* *easy*. You don't need any programming knowledge to start learning how to use AutoHotkey. 
 
 One of the drawbacks to using AutoHotkey is that it is OS-specific, meaning you can only use it on Windows. Another drawback is that a lot of the advanced automations that we'll be writing will also be 'computer' specific - meaning that it will be a tedious task to replicate on another computer. The biggest drawback of all though is that you have limited access to information inside of your host program. For example, you can't easily access the timecode, the in and point of clips, the number of clips on a given timeline, etc, etc. That is where the power of CEP comes into play:
 
