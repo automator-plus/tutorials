@@ -25,9 +25,10 @@
 
 ## Introduction
 
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=3YqoOo2LGsg">
-</iframe>
 
+<p align="center">
+<a href='https://www.youtube.com/watch?v=3YqoOo2LGsg'><img src='https://img.youtube.com/vi/3YqoOo2LGsg/0.jpg' width='50%'></a>
+</p>
 
 In this tutorial we'll go through the basic steps you'll need to get up and running with executing [ExtendScript](https://en.wikipedia.org/wiki/ExtendScript) code from within [VS Code](https://code.visualstudio.com/) against Adobe Premiere Pro as a host. If not all of that made sense, stick around.
 
