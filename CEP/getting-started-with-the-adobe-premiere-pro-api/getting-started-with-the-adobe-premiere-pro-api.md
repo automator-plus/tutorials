@@ -79,7 +79,7 @@ An API or Application Programming Interface is a defined set of functions that a
 If you think of your dog as Premiere Pro, then API commands would be things like "Sit", "Bark", "Chew Shoes", etc. Lets extend this  with a short hypothetical code example for our "dog API". 
 
 ```javascript
-jake = new Dog(name="Jake", bread="German Shepherd");
+jake = new Dog(name="Jake", breed="German Shepherd");
 jake.sit(); //Jake sits
 jake.bark(loudness=0.8); //Jake barks at 80% loudness
 jake.chewShoes(whos="Lilly"); //Jake chews Lilly's shoes
