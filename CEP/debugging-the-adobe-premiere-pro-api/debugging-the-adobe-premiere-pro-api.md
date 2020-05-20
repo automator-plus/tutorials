@@ -1,17 +1,19 @@
-# Debugging the Adobe Premiere Pro API
+<h1> Debugging the Adobe Premiere Pro API </h1>
 
 <p align="center">
   <img src='./assets/debug.jpg' width='640px'>
 </p>
 
-- [Debugging the Adobe Premiere Pro API](#debugging-the-adobe-premiere-pro-api)
-  - [Introduction](#introduction)
-  - [Debugging](#debugging)
-    - [What is a debugger](#what-is-a-debugger)
-    - [Breakpoints](#breakpoints)
-    - [Variable inspector](#variable-inspector)
 
-## Introduction
+<h2> Table of Content </h2>
+
+- [Introduction](#introduction)
+- [What is a debugger](#what-is-a-debugger)
+- [Creating a JS bug](#creating-a-js-bug)
+- [Breakpoints](#breakpoints)
+- [Variable inspector](#variable-inspector)
+
+# Introduction
 
 This tutorial assumes you've got VS Code installed as well as the VS Code Adobe ExtendScript Debugger. You can install VS Code <a href=''>here</a> and the ExtendScript Debugger <a href=''>here</a>. We've got a video and tutorial about it <a href=''>here</a> if you first want to check that out. If you're coming from the previous tutorial - God-speed captain!
 
@@ -24,13 +26,14 @@ In this tutorial we'll:
 + Look at some of the Premiere Pro building blocks
 + Create a script that inserts markers at specified frame or seconds intervals
 
-## Debugging
 
-### What is a debugger
+# What is a debugger
 
 Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉👆. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, this is using a different IDE to debug the solidity Ethereum language. I just want to share the first paragraph: 
 
 > Bugs! Bugs are aliens that creep into a programmer’s code at night when no one is watching and alter the state of working code. These aliens have only one mission — to frustrate the life of a programmer. How does a programmer kill a bug before he dies of frustration? Yeah, you got it right! By debugging and removing the buggy code. But why would a programmer go into a debugging war without the right tools? If a programmer is going to debug he better do it the right way, using the right tools.
+
+# Creating a JS bug
 
 If you've never written a line code in your life, here is a JavaScript example of a bug:
 
@@ -142,7 +145,7 @@ var result = "The type of 'value2' needs to be a string, not " + typeof(value2);
 console.log(result);
 ```
 
-We've introduced a lot of JavaScript programming concepts above. We'll pause it here, but elaborate more in our <a href=''>next turorial</a>.
+We've introduced a lot of JavaScript programming concepts above, if not everything made sense, checkout our <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md'>previous tutorial</a> about Programming Basics in JavaScript and  Adobe's ExtendScript-.
 
 VS Code has all the standard debugging features you'd expect from an IDE, like breakpoint support, a variable inspector and being able to watch variables. If you've never heard these terms before, fret not, stick around, we unpack them later. As I was saying, VS Code has all the standard debugger features
 
@@ -152,7 +155,9 @@ their extensions you can debug various languages using the same IDE. For more in
 
 We can't talk about debugging in VS Code without talking about the `./launch.json` file. 
 
-### Breakpoints
+# Breakpoints
 
-### Variable inspector 
+
+
+# Variable inspector 
 

@@ -8,6 +8,7 @@
 
 <h2> Table of Content</h2>
 
+- [Introduction](#introduction)
 - [History of JS and Adobe's Extend Script](#history-of-js-and-adobes-extend-script)
 - [Writing JavaScript in Chrome](#writing-javascript-in-chrome)
 - [JS Basics](#js-basics)
@@ -20,6 +21,12 @@
   - [Bringing it together](#bringing-it-together)
 - [Something with PP API?](#something-with-pp-api)
 - [Conclusion](#conclusion)
+
+# Introduction
+<!-- 
+<p align="center">
+<a href='https://www.youtube.com/watch?v=3YqoOo2LGsg'><img src='https://img.youtube.com/vi/3YqoOo2LGsg/0.jpg' width='50%'></a>
+</p> -->
 
 # History of JS and Adobe's Extend Script
 
