@@ -8,10 +8,15 @@
 <h2> Table of Content </h2>
 
 - [Introduction](#introduction)
-- [What is a debugger](#what-is-a-debugger)
+- [What is a debugger?](#what-is-a-debugger)
 - [Creating a JS bug](#creating-a-js-bug)
-- [Breakpoints](#breakpoints)
-- [Variable inspector](#variable-inspector)
+- [VS Code Debugger Basics](#vs-code-debugger-basics)
+  - [The `.vscode/launch.json` file.](#the-vscodelaunchjson-file)
+  - [Breakpoints](#breakpoints)
+  - [Variable Inspector](#variable-inspector)
+  - [Watching Variables](#watching-variables)
+- [CEP Example](#cep-example)
+- [Conclusion](#conclusion)
 
 # Introduction
 
@@ -23,15 +28,15 @@ In this tutorial we'll:
 + Debug the bug
 + Chat about the VS Code Debugger
 + Hook it up with Premiere Pro as our host
-+ Look at some of the Premiere Pro building blocks
-+ Create a script that inserts markers at specified frame or seconds intervals
++ Debug some ExtendScript code within VS Code
 
+# What is a debugger?
 
-# What is a debugger
-
-Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉👆. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, this is using a different IDE to debug the solidity Ethereum language. I just want to share the first paragraph: 
+Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉👆. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, the blog is using a different IDE to VS Code to debug Ethereum's solidity language and has nothing to do with CEP or Premiere Pro, I just want to share the first paragraph about bugs: 
 
 > Bugs! Bugs are aliens that creep into a programmer’s code at night when no one is watching and alter the state of working code. These aliens have only one mission — to frustrate the life of a programmer. How does a programmer kill a bug before he dies of frustration? Yeah, you got it right! By debugging and removing the buggy code. But why would a programmer go into a debugging war without the right tools? If a programmer is going to debug he better do it the right way, using the right tools.
+
+If you missed it, for us writing and debugging Adobe's ExtendScript the right tool for the job is VS Code.
 
 # Creating a JS bug
 
@@ -53,23 +58,24 @@ We expect `5`, `2+3` should be `5` _not_ `23`.
 
 Let's unpack what's happening here.
 
-First, we're creating a variable called `a` and assign it the value `"2"`. The double quotes around the 2 indicate that the value should be read as text, also called a **string**. We can make strings using single _or_ double-quotes. Assigning a value to a variables means that we are storing the value of the variable in memory (RAM) somewhere. Luckily, you don't have to keep track of _where_ in RAM, the programming language usually does that for you. However, you need to be aware of what you're storing in RAM and what you're storing on disk. If your PC crashes, everything in RAM disappears, everything on disk stays. 
+First, we're creating a variable called `a` and assign it the value `"2"`. The double quotes around the 2 indicate that the value should be read as text, also called a **string**. We can make strings using single _or_ double-quotes, although double-quotes is more common in JS. 
+
+Assigning a value to a variables means that we are storing the value of the variable somewhere in memory (RAM). Luckily, you don't have to keep track of _where_ in RAM, the programming language usually does that for you. However, you need to be aware of what you're storing in RAM and what you're storing on disk. If your application or PC crashes, everything in RAM disappears, everything on disk stays. 
 
 OK, quick IT lesson over, coming back to the above example, the line `var a = "2";` assigns the value of `"2"` to the variable `a`. We can verify this by print it out to what we call the console by running `console.log(a)`, i.e.
 
-```javascript
-var a = "2"
-console.log(a)
->2
-```
+
+<p align="center">
+  <img src='./assets/declaring-a.gif' width='530px'>
+</p>
+
 
 As expected, the value of `a` that is printed out is `2`. Maybe we want to make our printout a bit more clear by adding the text: "The value of the variable 'a' is `<INSEWRT VALUE HERE>`". To do this we can do what is called string concatenation in programming, a.k.a. putting strings together. We do this using the `+` operator and it works as you'd expect, `"hello" + "there"` = `"hellothere"`. Well, sort of. We'll come back to that, for now, we'll just do `"The value of 'a' is " + a`. 
 
-```javascript
-var a = "2"
-console.log("The value of 'a' is " + a)
->The value of 'a' is 2
-```
+
+<p align="center">
+  <img src='./assets/printing-out-a.gif' width='530px'>
+</p>
 
 Cool, so we've concatenated the string `"The value of 'a' is "` and the variable `a` to get `The value of 'a' is 2`. Coming back to our bug... Our next line of code is:
 
@@ -79,12 +85,10 @@ var b = 3;
 
 Here we do a very similar, yet very different operation compared to `var a = "2"`. We're still assigning a value to a variable, in this case, called `b`. However, this time there are no double quotes, and that makes all the difference. Without the double quotes, JavaScript interprets the value of `3` as a number, not text. We can verify this by running the following JavaScript code:
 
-```javascript
-console.log(typeof(a))
->string
-console.log(typeof(b))
->number
-```
+<p align="center">
+  <img src='./assets/typeof-a-and-b.gif' width='530px'>
+</p>
+
 
 As you can see the type of `a` is `string` and the type of `b` is number. And this is where our bug creeps in due to a misunderstanding between how we think JavaScript will add `"2"+3`. We think that it will treat both variables as numbers and sum `2` and `3` to give `5`. However, the default JavaScript action when summing two variables, one of type string and one of type number is to convert the number to a string and then do normal string concatenation. 
 
@@ -94,9 +98,9 @@ Don't worry, we won't go into all of the JavaScript ECMA standards. That's the p
 
 Right, a few chapters later and we've made peace with the fact that bugs are inevitable. So what can we do about their existence in our code? Well... We can put checks and balances in place to ensure that only what we expect is allowed to hit our code, otherwise, we tell the user what they did wrong and how they can fix it. 
 
-But understand, this comes with time and many iterations of faulty code that breaks and doesn't. When coding, assume it's _not_ going to work, that's why you're there, to make it work - one way or the other. 
+But understand, this comes with time and many iterations of faulty code that breaks and doesn't work. When coding, assume it's _not_ going to work, that's why you're there, **to make it work** - one way or the other. 
 
-An example of such a check in our bug above would be to check if the types of `ab and `b` are correct before summing them, otherwise, tell the user what went wrong. For example,
+An example of such a check in our bug above would be to check if the types of `a` and `b` are correct before summing them, otherwise, tell the user what went wrong. For example,
 
 ```javascript
 var a = "2";
@@ -111,7 +115,7 @@ if ((typeof(a) === "number") && (typeof(b) === "number")) {
 console.log(c);
 ```
 
-Here we add an `if` statement to check the types of `a` and `b`. We use the `&&` the say "and", in other words, the first _and_ second statement needs to hold true before we climb into the code defined between the first set of curly braces, `{}`. We then declare what should happen if our `if` condition isn't met, the `else` condition. In our case, we'll assign the text: "'a' and 'b' both need to be numbers" to the variable `c`. Why do this? It comes with time when programming, but you want to keep your code as clean as possible, so reusing the `c` variable name, allows us to only write `console.log(c)` _once_.  As opposed to:
+Here we add an `if` statement to check the types of `a` and `b`. We use the `&&` the say "and", in other words, the first _and_ second statement needs to hold true before we climb into the code defined between the first set of curly braces, `{}`. We then declare what should happen if our `if` condition isn't met, the `else` condition. In our case, we'll assign the text: `'a' and 'b' both need to be numbers` to the variable `c`. Why do this? It comes with time when programming, but you want to keep your code as clean as possible, so reusing the `c` variable name, allows us to only write `console.log(c)` _once_.  As opposed to:
 
 
 ```javascript
@@ -126,7 +130,13 @@ if ((typeof(a) === "number") && (typeof(b) === "number")) {
 }
 ```
 
-Subtle difference. However, cleaner code, is more maintainable code, is more sustainable code, is code with less _bugs_. To wrap up the JavaScript lesson, I'd like to _refactor_ the above code, however, to illustrate that variable names are your choice, and you should make good choices. Or try at least, variable names like `a`, `b` and `c` are not clear. You might think you know what your code is doing. But I can guarantee you, you will come back in 2 months and won't recognise your own code. Some better variable for our example is shown below, I also expand our else condition to tell the user exactly _which_ number is in the wrong format. 
+Subtle difference. However, cleaner code, is more maintainable code, is more sustainable code, is code with less _bugs_! To wrap up this JavaScript lesson, I'd like to _refactor_ the above code. Refactoring in programming entails going through code that you've already written and improving it where you can. 
+
+> Remember! There is no such thing as _perfect_ code, only _refactored_ code. 
+
+What this means is that you won't ever create the perfect piece of code, there will always be bugs that creep in, but by constantly refactoring and improving you code, you can strive towards perfect code with less bugs than you had before.
+
+Below we illustrate that variable names are your choice, and because they are your choice, you should make good choices - or try at least. Variable names like `a`, `b` and `c` are not very clear about what values are being stored in them. You might think you know what your code is doing. But I can guarantee you, you will come back in 2 months and won't recognise your own code. Some better variable names for our example is shown in our first iteration of refactored code below. We also expand our else condition to tell the user exactly _which_ number is in the wrong format. 
 
 ```javascript
 var value1 = "2";
@@ -134,30 +144,42 @@ var value2 = 3;
 
 if ((typeof(value1) === "number") && (typeof(value2) === "number")) {
     var sumValue = value1 + value2;
-    var result = "The value of c is " + sumValue;
+    var result = "The value of value1 + value2 is " + sumValue;
 } else {
     if(typeof(value1) !== "number"){
         var result = "The type of 'value1' needs to be a string, not " + typeof(value1);
     }else if(typeof(value2) !== "number"){
-var result = "The type of 'value2' needs to be a string, not " + typeof(value2);
+        var result = "The type of 'value2' needs to be a string, not " + typeof(value2);
     }
 }
 console.log(result);
 ```
 
-We've introduced a lot of JavaScript programming concepts above, if not everything made sense, checkout our <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md'>previous tutorial</a> about Programming Basics in JavaScript and  Adobe's ExtendScript-.
+We've introduced a lot of JavaScript programming concepts above, if not everything made sense, check out our <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md'>previous tutorial</a> about Programming Basics in JavaScript and Adobe's ExtendScript where we explain concepts like variables, if-statements and code scope in much more detail.
 
-VS Code has all the standard debugging features you'd expect from an IDE, like breakpoint support, a variable inspector and being able to watch variables. If you've never heard these terms before, fret not, stick around, we unpack them later. As I was saying, VS Code has all the standard debugger features
+VS Code has all the standard debugging features you'd expect from an IDE, like breakpoint support, a variable inspector and being able to watch variables. If you've never heard these terms before, stick around. As I was saying, VS Code has all the standard debugger features
 
 for various language and by installing a debugger extension for each language allows you to debug all your applications using the same debugger. 
 
 their extensions you can debug various languages using the same IDE. For more information on the VS Code Adobe ExtendScript debugger. VS Code's built-in debugger helps accelerate your edit, compile and debug loop.
 
-We can't talk about debugging in VS Code without talking about the `./launch.json` file. 
 
-# Breakpoints
+# VS Code Debugger Basics 
 
+We'll touch on the basics of debugging ExtendScript in VS Code, for more detail on debugging in VS Code be sure to check out the official VS Code page about the debugging <a href='https://code.visualstudio.com/docs/editor/debugging'>here</a>.
 
+VS can be used to debug most languages and runtimes (including PHP, Ruby, Go, C#, Python, C++, PowerShell and many others), look for Debuggers extensions in our VS Code Marketplace or select Install Additional Debuggers in the top-level Run menu.
 
-# Variable inspector 
+## The `.vscode/launch.json` file. 
+We can't talk about debugging in VS Code without talking about the `.vscode/launch.json` file. 
+
+## Breakpoints
+
+## Variable Inspector 
+
+## Watching Variables
+
+# CEP Example
+
+# Conclusion
 
