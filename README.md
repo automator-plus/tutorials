@@ -44,7 +44,7 @@ One of the drawbacks to using AutoHotkey is that it is OS-specific, meaning you 
 
 Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>here</a> with videos for the following tutorials:
 
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/AutoHotkey/1%20Getting%20Started%20With%20AutoHotkey/getting-started-with-autohotkey.md'>Start Automating Premiere Pro with AutoHotkey</a>
++ <a href='https://github.com/automator-plus/tutorials/blob/master/AutoHotkey/getting-started-with-AutoHotkey/getting-started-with-autohotkey.md'>Start Automating Premiere Pro with AutoHotkey</a>
 
 # Adobe Common Extensibility Platform (CEP) 
 
