@@ -5,8 +5,7 @@
   <cite>Photo by <a href='https://unsplash.com/@peter_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Peter Stumpf</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
 </p>
 
-
-</h2>Table of Content</h2>
+<h2>Table of Content</h2>
 
 - [Introduction](#introduction)
 - [Exploring AutoHotkey](#exploring-autohotkey)
