@@ -9,8 +9,9 @@
 
 - [Introduction](#introduction)
 - [AutoHotkey](#autohotkey)
-- [Adobe Common Extensibility Platform (CEP)](#adobe-common-extensibility-platform-cep)
   - [Tutorials](#tutorials)
+- [Adobe Common Extensibility Platform (CEP)](#adobe-common-extensibility-platform-cep)
+  - [Tutorials](#tutorials-1)
   - [Quickies](#quickies)
 
 # Introduction
@@ -38,6 +39,12 @@ For the purpose of this channel, we'll be showing you how to use AutoHotkey to a
 As the saying goes, there are many ways to skin a cat, and AutoHotkey is but one of the tools available to automate your workflow and it has its own set of pros and cons. The biggest advantage of using AutoHotkey is that it is *easy* to use. When we say easy, we mean *really* *easy*. You don't need any programming knowledge to start learning how to use AutoHotkey. 
 
 One of the drawbacks to using AutoHotkey is that it is OS-specific, meaning you can only use it on Windows. Another drawback is that a lot of the advanced automations that we'll be writing will also be 'computer' specific - meaning that it will be a tedious task to replicate on another computer. The biggest drawback of all though is that you have limited access to information inside of your host program. For example, you can't easily access the timecode, the in and point of clips, the number of clips on a given timeline, etc, etc. That is where the power of CEP comes into play:
+
+## Tutorials
+
+Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>here</a> with videos for the following tutorials:
+
++ <a href='https://github.com/automator-plus/tutorials/blob/master/AutoHotkey/1%20Getting%20Started%20With%20AutoHotkey/getting-started-with-autohotkey.md'>Start Automating Premiere Pro with AutoHotkey</a>
 
 # Adobe Common Extensibility Platform (CEP) 
 

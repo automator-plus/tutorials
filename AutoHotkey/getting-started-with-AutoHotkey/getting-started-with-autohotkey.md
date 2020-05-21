@@ -1,22 +1,24 @@
-# Start Automating Premiere Pro with AutoHotkey
+<h1> Start Automating Premiere Pro with AutoHotkey</h1>
 
 <p align="center">
   <img src='./assets/cover-image.jpg'>
   <cite>Photo by <a href='https://unsplash.com/@peter_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Peter Stumpf</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
 </p>
 
-- [Start Automating Premiere Pro with AutoHotkey](#start-automating-premiere-pro-with-autohotkey)
-  - [Introduction](#introduction)
-  - [Exploring AutoHotkey](#exploring-autohotkey)
-  - [How to install AutoHotkey.](#how-to-install-autohotkey)
-    - [Install AutoHotkey](#install-autohotkey)
-    - [Install an IDE](#install-an-ide)
-    - [Install the AHK Language in Visual Studio Code.](#install-the-ahk-language-in-visual-studio-code)
-  - [Write your first script!](#write-your-first-script)
+
+</h2>Table of Content</h2>
+
+- [Introduction](#introduction)
+- [Exploring AutoHotkey](#exploring-autohotkey)
+- [How to install AutoHotkey.](#how-to-install-autohotkey)
+  - [Install AutoHotkey](#install-autohotkey)
+  - [Install an IDE](#install-an-ide)
+  - [Install the AHK Language in Visual Studio Code.](#install-the-ahk-language-in-visual-studio-code)
+- [Write your first script!](#write-your-first-script)
 
 
 
-## Introduction
+# Introduction
 
 So you want to automate? Welcome to our channel where we will learn and explore different ways on how to automate and improve our editing workflows.
 
@@ -30,7 +32,7 @@ Let's take a look at some examples of the things we'll explore on this channel:
 
 The main scripting program that we'll be using is called AutoHotkey and it can be downloaded for free from their [website](https://www.autohotkey.com).
 
-## Exploring AutoHotkey
+# Exploring AutoHotkey
 
 AutoHotkey is an easy to use, free, open-source scripting language for Microsoft Windows. With it you can create shortcuts to virtually anything and you are able to create powerful macros to automate tedious tasks. Here are a few examples:
 
@@ -50,9 +52,9 @@ Another drawback is that a lot of the advanced automations that we'll be writing
 
 The biggest drawback of all though, is that you have limited access to information inside of your host program. For example, you can't easily access the timecode, the in and point of clips, the amount of clips on a given timeline, etc, etc.
 
- ## How to install AutoHotkey.
+ # How to install AutoHotkey.
 
- ### Install AutoHotkey
+ ## Install AutoHotkey
 
 Let's navigate to the AutoHotkey [website](https://www.autohotkey.com).
 
@@ -62,7 +64,7 @@ You should see a webpage that looks something like this:
 
 Click on the download button and install AHK onto your computer.
 
-### Install an IDE
+## Install an IDE
 
 The next step is to install an IDE on your computer.
 
@@ -78,7 +80,7 @@ It should look something like this:
 
 <img src="./assets/defaultVisualCode.png" width="75%">
 
-### Install the AHK Language in Visual Studio Code.
+## Install the AHK Language in Visual Studio Code.
 
 Now you need to install the AutoHotkey 'language' so that Visual Studio Code knows how to interperet your scripts. Click on the extensions tab on the left hand side of your screen.
 
@@ -90,7 +92,7 @@ In the search bar, type autohotkey and click on the install button that appears.
 
 **That's it!** You are now ready to write your first AutoHotkey script.
 
-## Write your first script!
+# Write your first script!
 
 Let's start with the first script that every first time programmer starts with. The "Hello world!" script.
 
