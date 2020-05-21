@@ -28,7 +28,7 @@
 
 
 <p align="center">
-<a href='https://www.youtube.com/watch?v=hxpcvvpTW5M'><img src='https://img.youtube.com/vi/hxpcvvpTW5M/0.jpg' width='50%'></a>
+<a href='https://www.youtube.com/watch?v=jpWzeFS-hNI'><img src='https://img.youtube.com/vi/jpWzeFS-hNI/0.jpg' width='50%'></a>
 </p>
 
 In this tutorial we'll go through the basic steps you'll need to get up and running with executing [ExtendScript](https://en.wikipedia.org/wiki/ExtendScript) code from within [VS Code](https://code.visualstudio.com/) against Adobe Premiere Pro as a host. If not all of that made sense, stick around.
