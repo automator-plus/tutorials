@@ -19,10 +19,14 @@
   - [For Loops](#for-loops)
   - [Objects](#objects)
   - [Bringing it together](#bringing-it-together)
-- [Something with PP API?](#something-with-pp-api)
 - [Conclusion](#conclusion)
 
 # Introduction
+
+In this tutorial we look at the basics of programming in JavaScript, and by extension Adobe's ExtendScript. We give a brief overview of the history of JavaScript to touch on the overlap between JavaScript and ExtendScript via ECMAScript. 
+
+The tutorial then goes on to show you how you can start coding JavaScript within your Chrome web browser's console. The tutorial touches on programming concepts like variables, variable types, if-statements, for-loops and JSON objects and brings all these concepts together in an example that loops through a list of clips and checks whether each clip has a certain length.
+
 <!-- 
 <p align="center">
 <a href='https://www.youtube.com/watch?v=3YqoOo2LGsg'><img src='https://img.youtube.com/vi/3YqoOo2LGsg/0.jpg' width='50%'></a>
@@ -684,7 +688,13 @@ But more often than not you'll find yourself Googling:
 
 But after the 100th time Google how to write a JavaScript for-loop, either the repetition or the irritation of Googling for the 101st time makes it settle in. ☺️
 
-# Something with PP API?
+<!-- # Something with PP API? -->
 
 
 # Conclusion
+
+In this tutorial, we briefly discussed the history of JavaScript, ECMAScript and ExtendScript and how the 3 are related. We looked at opening a JavaScript console within Google Chrome and showed you how to write some JS in your browser. 
+
+We made the analogy that learning a *programming* language is a lot like learning a new language. First, you need to learn the words of the language, then you can start writing sentences and paragraphs, and eventually we can build it up to fully-fledge essays that lift a lot of weight for us. 
+
+We looked at variables, variable types, if-statements, for-loops and JSON objects and brought all the concepts together in an example that loops through a list of clips and checks whether each clip has a certain length.
