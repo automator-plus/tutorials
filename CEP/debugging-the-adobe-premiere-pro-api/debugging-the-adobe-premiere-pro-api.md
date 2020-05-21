@@ -10,13 +10,6 @@
 - [Introduction](#introduction)
 - [What is a debugger?](#what-is-a-debugger)
 - [Creating a JS bug](#creating-a-js-bug)
-- [VS Code Debugger Basics](#vs-code-debugger-basics)
-  - [The `.vscode/launch.json` file.](#the-vscodelaunchjson-file)
-  - [Breakpoints](#breakpoints)
-  - [Variable Inspector](#variable-inspector)
-  - [Watching Variables](#watching-variables)
-- [CEP Example](#cep-example)
-- [Conclusion](#conclusion)
 
 # Introduction
 
@@ -163,6 +156,7 @@ for various language and by installing a debugger extension for each language al
 
 their extensions you can debug various languages using the same IDE. For more information on the VS Code Adobe ExtendScript debugger. VS Code's built-in debugger helps accelerate your edit, compile and debug loop.
 
+<!-- 
 
 # VS Code Debugger Basics 
 
@@ -182,4 +176,4 @@ We can't talk about debugging in VS Code without talking about the `.vscode/laun
 # CEP Example
 
 # Conclusion
-
+ -->
