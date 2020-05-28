@@ -28,10 +28,10 @@ In this tutorial we look at the basics of programming in JavaScript, and by exte
 
 The tutorial then goes on to show you how you can start coding JavaScript within your Chrome web browser's console. The tutorial touches on programming concepts like variables, variable types, if-statements, for-loops and JSON objects and brings all these concepts together in an example that loops through a list of clips and checks whether each clip has a certain length.
 
-<!-- 
+
 <p align="center">
-<a href='https://www.youtube.com/watch?v=3YqoOo2LGsg'><img src='https://img.youtube.com/vi/3YqoOo2LGsg/0.jpg' width='50%'></a>
-</p> -->
+<a href='https://www.youtube.com/watch?v=LGabsGWvrUY'><img src='https://img.youtube.com/vi/LGabsGWvrUY/0.jpg' width='50%'></a>
+</p>
 
 # History of JS and Adobe's Extend Script
 
