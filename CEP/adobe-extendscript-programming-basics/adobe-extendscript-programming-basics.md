@@ -19,6 +19,7 @@
   - [For Loops](#for-loops)
   - [Objects](#objects)
   - [Bringing it together](#bringing-it-together)
+- [Applying these concepts to Premiere Pro](#applying-these-concepts-to-premiere-pro)
 - [Conclusion](#conclusion)
 
 # Introduction
@@ -677,9 +678,7 @@ for (var clip in clips) {
 }
 ```
  
-Hopefully, after this tutorial, you can look at this bit of code and at least understand what the code is doing. Don't worry if you can't remember the syntax exactly, that's what Google is for. Seriously, no programmer can code without internet access, maybe if they have the instruction manual next to them. 
-
-But more often than not you'll find yourself Googling:
+Hopefully, after this tutorial, you can look at this bit of code and at least understand what the code is doing. Don't worry if you can't remember the syntax exactly, that's what Google is for. Seriously, no programmer can code *without* internet access, maybe if they have the instruction manual next to them. But more often than not you'll find yourself Googling:
 
 + "For loop JavaScript"
 + "If statement JavaScript"
@@ -688,13 +687,115 @@ But more often than not you'll find yourself Googling:
 
 But after the 100th time Google how to write a JavaScript for-loop, either the repetition or the irritation of Googling for the 101st time makes it settle in. ☺️
 
-<!-- # Something with PP API? -->
+# Applying these concepts to Premiere Pro
 
+If you've come this far and this is the first time you're programming, well done! These concepts are bound to be very weird the first time. We urge to keep going on your programming journey and to illustrate how all of these concepts can be used Premiere Pro, below I show some ExtendScript code that will mute the first video track in our active sequence. We're building on the same example we used in <a href='https://www.youtube.com/watch?v=jpWzeFS-hNI'>this</a> video. 
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks; // Get all the video tracks
+firstTrack = videoTracks[0]; // Get the first video track
+firstTrack.setMute(true); // Set the firstTrack's muted attribute using the setMute method
+```
+
+The code above is only able to mute the first track because we create the variable `firstTrack` and set it equal to the first element in the videoTracks list, i.e. `videoTracks[0]`. But if we could iterate through all of our tracks, we can set the mute attribute of all our tracks in one go, irrelevant of how many tracks there are. Basically, we would like to call `videoTracks[i].setMute(true)` for `i` running from `0` to the total number of tracks - sounds like something familiar? A for-loop will give us the ability to create our `i` counter, however, we still need to figure out how many video tracks there are. Luckily, the videoTracks object has an attribute `numTracks`. So our for-loop will look something like this:
+
+```javascript
+// Get video tracks
+videoTracks = app.project.activeSequence.videoTracks;
+
+// Loop through video tracks
+for(i=0;i<videoTracks.numTracks;i++){
+
+  // Set each track's mute state to true
+  videoTracks[i].setMute(true);
+}
+```
+
+We can expand this example a bit further to give us some print out when each track is set to mute. This entire time we've been making the statement ExtendScript is basically the same as JavaScript. However, when it comes to printing out values in ExtendScript we've got to use the `$.write()` method. So basically instead of using `console.log()`, in ExtendScript world we'll be using `$.write()` and it's brother `$.writeln()`. `$.writeln()` is probably more similar to `console.log()` as it also includes and "Enter"/"Return" at the end of the line, whereas `$.write()` just keeps printing in one line.
+
+Let's look at an example. We'll be adding the text `Muted track <trackNr>` to our for loop that we know when each track has been muted. 
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks;
+
+for(i=0;i<videoTracks.numTracks;i++){
+  videoTracks[i].setMute(true);
+  $.write("Muted track " + i)
+}
+```
+
+However, for `6` video tracks, the code above will print out:
+
+```log
+Muted track 1Muted track 2Muted track 3Muted track 4Muted track 5Muted track 6
+```
+
+This is because `$.write` keeps writing, no new line! We can inject a new line using the `\n` character. In programming, there are a few "special" characters, usually prepended with `\`, that indicate special meaning. For example, `\n` denotes the Enter key, whereas `\t` denotes the tab character. If we add this our code snippet above:
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks;
+
+for(i=0;i<videoTracks.numTracks;i++){
+  videoTracks[i].setMute(true);
+  $.write("\nMuted track " + i)
+}
+```
+
+we'd actually get:
+
+```log
+
+Muted track 1
+Muted track 2
+Muted track 3
+Muted track 4
+Muted track 5
+Muted track 6
+```
+
+Notice the first open line? This is because we start with `\n`, an alternative would be:
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks;
+
+for(i=0;i<videoTracks.numTracks;i++){
+  videoTracks[i].setMute(true);
+  $.write("Muted track " + i + "\n")
+}
+```
+
+Here we are adding the "Enter" at the end of the line. The output would be:
+
+```log
+Muted track 1
+Muted track 2
+Muted track 3
+Muted track 4
+Muted track 5
+Muted track 6
+
+```
+
+Now we get last `\n` creating an open line on the last line. As we usually just use the printouts to give ourselves an idea of what is going on in the code, the open lines don't matter too much, but if you were wondering, now you know.
+
+Luckily, there is another method that we can use, that deals with all this entering after the text, and it's called `$.writeln()`, a.k.a. write *line*.
+
+
+```javascript
+videoTracks = app.project.activeSequence.videoTracks;
+
+for(i=0;i<videoTracks.numTracks;i++){
+  videoTracks[i].setMute(true);
+  $.writeln("Muted track " + i)
+}
+```
 
 # Conclusion
 
-In this tutorial, we briefly discussed the history of JavaScript, ECMAScript and ExtendScript and how the 3 are related. We looked at opening a JavaScript console within Google Chrome and showed you how to write some JS in your browser. 
+In this tutorial, we discussed the history of JavaScript, ECMAScript and ExtendScript and how the 3 are related. We looked at opening a JavaScript console within Google Chrome and showed you how to write some JS in your browser. 
 
 We made the analogy that learning a *programming* language is a lot like learning a new language. First, you need to learn the words of the language, then you can start writing sentences and paragraphs, and eventually we can build it up to fully-fledge essays that lift a lot of weight for us. 
 
 We looked at variables, variable types, if-statements, for-loops and JSON objects and brought all the concepts together in an example that loops through a list of clips and checks whether each clip has a certain length.
+
+Finally, we brought everything together by looking at an ExtendScript example where we loop through all of our video tracks in Premiere Pro and set their mute attributes to false. 
