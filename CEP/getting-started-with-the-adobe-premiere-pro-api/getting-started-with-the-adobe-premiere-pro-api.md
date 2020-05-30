@@ -1,29 +1,34 @@
-# Getting Started with Adobe ExtendScript in Premiere Pro
+<h1>Getting Started with Adobe ExtendScript in Premiere Pro</h1>
 
 <p align="center">
   <img src='./assets/cover-image.jpg'>
   <cite>Photo by <a href='https://unsplash.com/@peter_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Peter Stumpf</a> on <a href='https://unsplash.com/'>Unsplash</a>.</cite>
 </p>
 
-- [Getting Started with Adobe ExtendScript in Premiere Pro](#getting-started-with-adobe-extendscript-in-premiere-pro)
-  - [Introduction](#introduction)
-  - [What we'll cover](#what-well-cover)
-  - [What is an IDE](#what-is-an-ide)
-  - [The Premiere Pro API](#the-premiere-pro-api)
-    - [What is an API](#what-is-an-api)
-    - [How everything fits together](#how-everything-fits-together)
-  - [Setting Everything Up](#setting-everything-up)
-    - [VS Code](#vs-code)
-    - [Debug Extension](#debug-extension)
-  - [Running some code](#running-some-code)
-    - [Creating a VS Code folder as to serve as a workspace](#creating-a-vs-code-folder-as-to-serve-as-a-workspace)
-    - [The launch.json file](#the-launchjson-file)
-    - [Executing the code](#executing-the-code)
-    - [Speeding up our development life cycle](#speeding-up-our-development-life-cycle)
-  - [Conclusion](#conclusion)
+<h2> Table of Content</h2>
+
+- [Introduction](#introduction)
+- [What we'll cover](#what-well-cover)
+- [What is an IDE](#what-is-an-ide)
+- [The Premiere Pro API](#the-premiere-pro-api)
+  - [What is an API](#what-is-an-api)
+  - [How everything fits together](#how-everything-fits-together)
+- [Setting Everything Up](#setting-everything-up)
+  - [VS Code](#vs-code)
+  - [Debug Extension](#debug-extension)
+- [Running some code](#running-some-code)
+  - [Creating a VS Code folder as to serve as a workspace](#creating-a-vs-code-folder-as-to-serve-as-a-workspace)
+  - [The launch.json file](#the-launchjson-file)
+  - [Executing the code](#executing-the-code)
+  - [Speeding up our development life cycle](#speeding-up-our-development-life-cycle)
+- [Conclusion](#conclusion)
 
 
-## Introduction
+# Introduction
+
+<p align="center">
+<a href='https://www.youtube.com/watch?v=jpWzeFS-hNI'><img src='https://img.youtube.com/vi/jpWzeFS-hNI/0.jpg' width='80%'></a>
+</p>
 
 In this tutorial we'll go through the basic steps you'll need to get up and running with executing [ExtendScript](https://en.wikipedia.org/wiki/ExtendScript) code from within [VS Code](https://code.visualstudio.com/) against Adobe Premiere Pro as a host. If not all of that made sense, stick around.
 
@@ -36,7 +41,7 @@ In this tutorial we'll go through the basic steps you'll need to get up and runn
 + Illustrator ExtendScript API documentation: http://ai.aenhancers.com
 
 
-## What we'll cover
+# What we'll cover
 
 In this tutorial, we'll not only show you how to use the <a href='http://ppro.aenhancers.com'>Premiere Pro API</a> but also give you some background knowledge about how the ExtendScript system is put together behind the scenes to give you some intuition about how your code is executing. Having an understanding of what is executing what where will help when things go wrong. 
 
@@ -54,7 +59,7 @@ In this tutorial, we'll cover:
 
  If you've never coded in you're life, don't worry! And if acronyms like IDE and API are still a bit foreign to you, great! Then you might actually learn something... If you already know these terms, we still hope we can teach you something you don't already know. Ultimately, with this tutorial series, we want to bring you the knowledge that will show you how to unlock the superpowers that programming the Adobe suite unlocks.
 
- ## What is an IDE
+ # What is an IDE
 
 To start, an IDE is an acronym for Integrated Development Environment, and an IDE is basically the "text editor" that you code in. I say "text editor" in air quotes as your "text editor" when coding isn't <i>just</i> a "text editor", it is your interface into the matrix and choosing the right IDE ensures a high bandwidth connection. There is an old saying about a bad workman always blaming his tools, and there is truth in that. However, not when it comes to IDE's. Some IDE's give you supra powers, others give you just powers. 
 
@@ -64,16 +69,16 @@ For the non-programming folk, open-source software is essentially free software,
 
 You might think why would Adobe make software available for free and not charge for it. Well, they've learned from the rest of the world that the only way to have a stable code base is to make your code open-source so that the open-source community, you and I, can build, test and deploy useful add-ons to their software without any cost to them. So open source isn't completely free, Adobe still employs many software engineers to write and maintain the CEP API, however, the benefit that Adobe gets by having the entire world test their code base and create new plug-ins outweighs the costs tenfold. 
 
-## The Premiere Pro API
+# The Premiere Pro API
 
-### What is an API
+## What is an API
 
 An API or Application Programming Interface is a defined set of functions that allows interaction with an application. Basically, a list of commands that tell you how do things with an application, in our case Premiere Pro. 
 
 If you think of your dog as Premiere Pro, then API commands would be things like "Sit", "Bark", "Chew Shoes", etc. Lets extend this  with a short hypothetical code example for our "dog API". 
 
 ```javascript
-jake = new Dog(name="Jake", bread="German Shepherd");
+jake = new Dog(name="Jake", breed="German Shepherd");
 jake.sit(); //Jake sits
 jake.bark(loudness=0.8); //Jake barks at 80% loudness
 jake.chewShoes(whos="Lilly"); //Jake chews Lilly's shoes
@@ -94,7 +99,7 @@ Again, if this is not making sense, don't worry we'll unpack all of it throughou
 Also, _all_ the available methods aren't always documented in the main API documentation - this is, unfortunately, the other side of the open-source community. Things are usually screened, but as the API changes, documentation isn't always kept up to date and it's up to us, the open source community, to improve discrepancies like this. Luckily, Adobe is always keen to help and they've got a dedicated guy looking out for the Premiere Pro API concerns, Bruce Bullis. You can drop him a mail if you have any question at bbb@adobe.com and he usually comes back within a few days with some advice or points you in a direction. You'll also see him very active on the Adobe API forums. 
 
 
-### How everything fits together
+## How everything fits together
 
 Let's look at how the various components fit together to get you up and running to develop some ExtendScript using the Premiere API in VS Code.
 
@@ -165,9 +170,9 @@ In summary, we'll hook-up our VS Code text editor with the Adobe applications th
 
 <img src='./assets/architecture.png' width='100%'>
 
-## Setting Everything Up
+# Setting Everything Up
 
-### VS Code
+## VS Code
 
 First, we'll head over to the VS Code website  <a href='https://code.visualstudio.com/'>here</a> and do the download deed for your operating system. 
 
@@ -175,7 +180,7 @@ First, we'll head over to the VS Code website  <a href='https://code.visualstudi
 
 Go ahead and click the next-next-next on Windows or drag VS Code into Applications on Mac.
 
-### Debug Extension
+## Debug Extension
 
 Next, we're going to install the ExtendScript Debugger extension by going to the extensions tab within VS Code. You can find the extension tab by clicking on the 4 square icon, 👇 this one.
 
@@ -188,9 +193,9 @@ Once on the extension tab, you can search for the term "ExtendScript". You shoul
 Go ahead and install both the <b>ExtendScript Debugger</b> extension as well as the extension just titled <b>ExtendScript</b>. The later extension will allow for syntax highlighting for the ExtendScript language within VS Code. In other words, VS Code becomes aware of what are valid ExtendScript commands and colours your files accordingly. To be sure the extensions are successfully installed, go ahead and close and reopen VS Code.
 
 
-## Running some code
+# Running some code
 
-### Creating a VS Code folder as to serve as a workspace
+## Creating a VS Code folder as to serve as a workspace
 
 To execute some code, we'll need a folder to act as our workspace to hold all our files. Create a new folder somewhere on your drive and open that folder with VS code by going to `File > Open Workspace`. Then create a new file within VS Code by going to  `File > New File` and saving it as `muteTrack1.jsx` in your workspace folder.
 
@@ -202,7 +207,7 @@ firstTrack = videoTracks[0]; // Get the first video track
 firstTrack.setMute(true); // Set the firstTrack's muted attribute using the setMute method
 ```
 
-### The launch.json file
+## The launch.json file
 
 Next, we need to create a `launch.json` file for our debugger to know which file to execute when we hit run. 
 
@@ -239,7 +244,7 @@ You should also see a configuration to run in the debug tab, which reflects the 
 <img src='./assets/vs-code-ask-for-script-name.jpg' width='400px'>
 
 
-### Executing the code
+## Executing the code
 
 You can see execute the `Ask for script name` task by pressing the ▷ icon in the debug panel. An input dialog will pop-up, enter `muteTrack1.jsx` and hit enter.
 
@@ -260,7 +265,7 @@ This should bring up the following dialogue which will detect what Adobe applica
 
 If you hit the ▷ again and insert `muteTrack1.jsx` VS Code should execute the code and your first video track in Premiere Pro should be muted. 
 
-### Speeding up our development life cycle
+## Speeding up our development life cycle
 
 You might want to change your `launch.json` file to 
 
@@ -286,7 +291,7 @@ This way you won't have to paste the filename into the dialogue every time.
 
 Change the last line in your `muteTrack1.jsx` file to `firstTrack.setMute(false);` and see what happens when you execute it again.
 
-## Conclusion
+# Conclusion
 
 Depending on where you are on your coding journey, this tutorial covered a few novel concepts or a lot of novel concepts, here is a summary of what we looked at. 
 
