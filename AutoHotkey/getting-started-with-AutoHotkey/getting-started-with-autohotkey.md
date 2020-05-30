@@ -18,6 +18,9 @@
 
 
 # Introduction
+<p align="center">
+<a href='https://www.youtube.com/watch?v=DxXsr63TmDs'><img src='https://img.youtube.com/vi/DxXsr63TmDs/0.jpg' width='80%'></a>
+</p>
 
 So you want to automate? Welcome to our channel where we will learn and explore different ways on how to automate and improve our editing workflows.
 
