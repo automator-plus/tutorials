@@ -5,25 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "extendscript-debug",
+            "type": "ahk",
             "request": "launch",
-            "name": "Alter in and out points",
-            "program": "${workspaceFolder}/CEP/quickies/alterInOutPoints.jsx",
-            "stopOnEntry": false
-        },
-        {
-            "type": "extendscript-debug",
-            "request": "launch",
-            "name": "Insert Clip",
-            "program": "${workspaceFolder}/CEP/quickies/insertClip.jsx",
-            "stopOnEntry": false
-        },
-        {
-            "type": "extendscript-debug",
-            "request": "launch",
-            "name": "Insert Clip Tracks",
-            "program": "${workspaceFolder}/CEP/quickies/insertClipTracks.jsx",
-            "stopOnEntry": false
+            "name": "Autohotkey Debugger",
+            "program": "C:\\Users\\Jacques\\Documents\\tutorials\\AutoHotkey\\1 Getting Started With AutoHotkey\\examples\\helloWorld.ahk",
+            "stopOnEntry": true
         }
     ]
 }
