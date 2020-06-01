@@ -25,6 +25,9 @@
 
 
 ## Introduction
+<p align="center">
+<a href='https://www.youtube.com/watch?v=hSAz2Z3Kt54'><img src='https://img.youtube.com/vi/hSAz2Z3Kt54/0.jpg' width='80%'></a>
+</p>
 
 Welcome to the Automator Plus Github repo, where we will show you how to automate your editing workflow. In this tutorial we'll explore a few AHK commands and how we can use them to improve our editing speed.
 
