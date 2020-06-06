@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "extendscript-debug",
             "request": "launch",
@@ -23,6 +24,34 @@
             "request": "launch",
             "name": "Insert Clip Tracks",
             "program": "${workspaceFolder}/CEP/quickies/insertClipTracks.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Insert A Clip At Places",
+            "program": "${workspaceFolder}/CEP/quickies/insert-a-clip-at-places.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Change A Clip's Properties",
+            "program": "${workspaceFolder}/CEP/quickies/change-clip-properties.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Handling Markers",
+            "program": "${workspaceFolder}/CEP/quickies/handling-markers.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Sequence details to file",
+            "program": "${workspaceFolder}/CEP/quickies/sequence-details-to-file.jsx",
             "stopOnEntry": false
         }
     ]
