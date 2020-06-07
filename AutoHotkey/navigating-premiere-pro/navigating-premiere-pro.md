@@ -7,22 +7,6 @@
 
 - [Navigating the Premiere Pro Timeline with AutoHotkey](#navigating-the-premiere-pro-timeline-with-autohotkey)
   - [Introduction](#introduction)
-  - [The AHK commands we will be using:](#the-ahk-commands-we-will-be-using)
-    - [The AHK header commands](#the-ahk-header-commands)
-      - [#NoEnv command](#noenv-command)
-      - [#SingleInstance force command](#singleinstance-force-command)
-      - [SendMode Input command](#sendmode-input-command)
-      - [SetWorkingDir %A_ScriptDir% command](#setworkingdir-a_scriptdir-command)
-    - [The sendInput command](#the-sendinput-command)
-    - [The sleep command](#the-sleep-command)
-  - [The current methods for zooming in and out of your timeline](#the-current-methods-for-zooming-in-and-out-of-your-timeline)
-  - [Now let's put it all together! Our first functions:](#now-lets-put-it-all-together-our-first-functions)
-  - [Using the loop statement to zoom multiple times](#using-the-loop-statement-to-zoom-multiple-times)
-    - [Zoom in three steps](#zoom-in-three-steps)
-  - [Assigning our functions to the various shortcut keys](#assigning-our-functions-to-the-various-shortcut-keys)
-  - [Conclusion](#conclusion)
-
-
 
 ## Introduction
 <p align="center">
@@ -32,3 +16,4 @@
 Welcome to the Automator Plus Github repo, where we will show you how to automate your editing workflow. In this video we'll be creating various functions to help navigate the Premiere Pro timeline.
 
 Link to sample code:
+https://github.com/automator-plus/tutorials/blob/master/AutoHotkey/navigating-premiere-pro/examples/navigateCommands.ahk
