@@ -10,7 +10,7 @@
 
 ## Introduction
 <p align="center">
-<a href='https://www.youtube.com/watch?v=Ni_x_mXqyXI'><img src='https://img.youtube.com/vi/Ni_x_mXqyXI.jpg' width='80%'></a>
+<a href='https://www.youtube.com/watch?v=Ni_x_mXqyXI'><img src='https://img.youtube.com/vi/Ni_x_mXqyXI/0.jpg' width='80%'></a>
 </p>
 
 Welcome to the Automator Plus Github repo, where we will show you how to automate your editing workflow. In this video we'll be creating various functions to help navigate the Premiere Pro timeline.
