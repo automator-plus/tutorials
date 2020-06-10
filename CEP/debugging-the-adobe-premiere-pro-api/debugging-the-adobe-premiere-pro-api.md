@@ -23,6 +23,11 @@ In this tutorial we'll:
 + Hook it up with Premiere Pro as our host
 + Debug some ExtendScript code within VS Code
 
+<p align="center">
+<a href='https://www.youtube.com/watch?v=OoU8GwOPfAc'><img src='https://img.youtube.com/vi/OoU8GwOPfAc/0.jpg' width='50%'></a>
+</p>
+
+
 # What is a debugger?
 
 Let's start with the definition of a bug before we start debugging them. Below is a great extract I got from <a href='https://hackernoon.com/debugging-smart-contracts-with-truffle-debugger-a-practical-approach-f56bf0600736'>this</a> Hackernoon blog about debugging smart contracts on the blockchain. Super tangent, but the blockchain is also _just_ code that needs writing, executing, testing and most importantly *debugging*. Also, the blog gets the image credits 😉👆. If you want to know more about bugs on the blockchain and debugging them, give the blog a read. The blog goes on to chat about the right tools for the job, however, the blog is using a different IDE to VS Code to debug Ethereum's solidity language and has nothing to do with CEP or Premiere Pro, I just want to share the first paragraph about bugs: 
@@ -73,7 +78,7 @@ As expected, the value of `a` that is printed out is `2`. Maybe we want to make 
 Cool, so we've concatenated the string `"The value of 'a' is "` and the variable `a` to get `The value of 'a' is 2`. Coming back to our bug... Our next line of code is:
 
 ```javascript
-var b = 3;
+var b = 3;****
 ```
 
 Here we do a very similar, yet very different operation compared to `var a = "2"`. We're still assigning a value to a variable, in this case, called `b`. However, this time there are no double quotes, and that makes all the difference. Without the double quotes, JavaScript interprets the value of `3` as a number, not text. We can verify this by running the following JavaScript code:
