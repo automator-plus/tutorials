@@ -66,4 +66,8 @@ Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaN
 
 We've also got tutorials on <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>our YouTube channel</a> for the following quickies:
 
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/insertClip.jsx'>How to Insert a Clip in Premiere Pro</a>
++ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/insert-clip.jsx'>How to Insert a Clip in Premiere Pro</a>
++ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/insert-a-clip-at-places.jsx'>Various ways to Insert a Clip</a>
++ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/handling-markers.jsx'>How to Handle Markers</a>
++ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/change-clip-properties.jsx'>Changing the Properties of Clips</a>
++ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/sequence-details-to-file.jsx'>Exporting Sequence Details</a>
