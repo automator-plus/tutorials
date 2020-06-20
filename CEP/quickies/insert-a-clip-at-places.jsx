@@ -24,14 +24,14 @@ var projItem = videoClip.projectItem;
 
 // Insert at 0 
 // videoTrack.insertClip(projItem, 1);
-videoTrack.overwriteClip(projItem, 1);
+videoTrack.overwriteClip(projItem, 2);
 
 /* ========================================================
               2. Insert Clip at playhead time
    ======================================================== 
 **/
 
-// Initialise our variables that we will use for this section
+// // Initialise our variables that we will use for this section
 // var trackNr = 1;
 // var clipNr = 0;
 
@@ -105,7 +105,7 @@ videoTrack.overwriteClip(projItem, 1);
 // var videoClip = videoTrack.clips[clipNr];
 // var projItem = videoClip.projectItem;
 
-// videoTrack.overwriteClip(projItem, time);
+// videoTrack.insertClip(projItem, time);
 // }
 
-// insertVideoClip(0,0,0)
+// insertVideoClip(0,1,1)

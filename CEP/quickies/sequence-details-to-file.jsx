@@ -14,7 +14,7 @@ for(var i = 0; i < videoTracks.numTracks; i++){
     var videoClips = videoTracks[i].clips;
     for(var j = 0; j< videoClips.numItems; j++){
         var clip = videoClips[j]
-
+        $.write('TrackNr: '+i+', ClipNr: '+j+', ');
         $.write(clip.name+', ')
         $.write(clip.duration.seconds+', ')
         $.write(clip.start.seconds+', ')
@@ -32,10 +32,11 @@ var audioTracks = seq.audioTracks;
 
 // Loop through all the video tracks and clips
 for(var i = 0; i < audioTracks.numTracks; i++){
-    var audioTracks = audioTracks[i].clips;
-    for(var j = 0; j< audioTracks.numItems; j++){
-        var clip = audioTracks[j]
+    var audioTrack = audioTracks[i].clips;
+    for(var j = 0; j< audioTrack.numItems; j++){
+        var clip = audioTrack[j]
 
+        $.write('TrackNr: '+i+', ClipNr: '+j+', ');
         $.write(clip.name+', ')
         $.write(clip.duration.seconds+', ')
         $.write(clip.start.seconds+', ')

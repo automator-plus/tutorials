@@ -8,10 +8,10 @@
 var seq = app.project.activeSequence; 
 
 // Get grip on markers
-var markers = seq.markers;
+var makers = seq.markers;
 
 // Add a new marker using the MarkerCollection.createMarker method
-var newMarker = markers.createMarker(1);
+var newMarker = makers.createMarker(1);
 newMarker.end = 2;
 
 /* ========================================================
@@ -19,10 +19,10 @@ newMarker.end = 2;
    ======================================================== 
 **/
 
-// // Add a new marker using the MarkerCollection.createMarker method
+// Add a new marker using the MarkerCollection.createMarker method
 // var newMarker2 = markers.createMarker(3);
-// newMarker2.setColorByIndex(1);
-// newMarker2.name = '😸marker2';
+// newMarker2.setColorByIndex(2);
+// newMarker2.name = '😅marker2';
 // newMarker2.comments = 'Here are some comments.';
 // newMarker2.end = 4;
 
@@ -33,11 +33,19 @@ newMarker.end = 2;
 
 // var numMarkers = seq.markers.numMarkers;
 
-// for (var current_marker = markers.getFirstMarker(); current_marker !== undefined; current_marker = markers.getNextMarker(current_marker)) {
-//     $.writeln(current_marker.name);
-//     $.writeln(current_marker.comments);
-//     $.writeln(current_marker.start.seconds);
-//     $.writeln(current_marker.end.seconds);
+// for(var i = 0; i < 10; i++){
+//         var _ = markers.createMarker(i);
+//         _.setColorByIndex(i%8);
+//         _.name = "Marker #"+i;
+// }
+
+// for (var current_marker = markers.getFirstMarker(); 
+//         current_marker !== undefined; 
+//         current_marker = markers.getNextMarker(current_marker)) {
+//     $.write(current_marker.name + ', ');
+//     $.write(current_marker.comments + ', ');
+//     $.write(current_marker.start.seconds + ', ');
+//     $.write(current_marker.end.seconds + ', ');
 //     $.writeln();
 // }
 
@@ -47,10 +55,14 @@ newMarker.end = 2;
    ======================================================== 
 **/
 
-// var markerNameToDelete = '😸marker2';
+// var markerNameToDelete = 'Marker #1';
 
-//  for (var current_marker = markers.getFirstMarker(); current_marker !== undefined; current_marker = markers.getNextMarker(current_marker)) {
-//     if(current_marker.name == markerNameToDelete){
-//         markers.deleteMarker(current_marker);
-//     }
+//  for (var current_marker = markers.getFirstMarker(); 
+//         current_marker !== undefined; 
+//         current_marker = markers.getNextMarker(current_marker)) {
+
+//         if(current_marker.name == markerNameToDelete){
+//                 markers.deleteMarker(current_marker);
+//         }
+
 //  }

@@ -18,12 +18,15 @@ var effects = videoClip.components;
 
 //Loop through all the effects applied to the clip
 for(var i=0;i<effects.numItems;i++){ 
-    effect = effects[i];
-    $.writeln("Effect # "+i+" is: "+effect.displayName);
+    var effect = effects[i];
+    var effectDisplayName = effect.displayName
+    $.writeln("Effect # "+i+" is: "+effectDisplayName);
     
     // Loop through all the properties of the current effect
     for(var j=0;j<effect.properties.numItems;j++){
-        $.writeln("Property # "+j+" is: "+effect.properties[j].displayName); 
+        var property = effect.properties[j]
+        var propertyDisplayName = property.displayName
+        $.writeln("Property # "+j+" is: "+propertyDisplayName); 
     } 
 } 
 
