@@ -4,12 +4,39 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Export Screenshot at Markers",
+            "program": "${workspaceFolder}/CEP/quickies/export-screenshots/at-markers.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Export Screenshot at Edit Points",
+            "program": "${workspaceFolder}/CEP/quickies/export-screenshots/at-edit-points.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Export Screenshot at Playhead",
+            "program": "${workspaceFolder}/CEP/quickies/export-screenshots/at-playhead.jsx",
+            "stopOnEntry": false
+        },
         {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Alter in and out points",
             "program": "${workspaceFolder}/CEP/quickies/alterInOutPoints.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Random Insert From 3 Cams",
+            "program": "${workspaceFolder}/CEP/quickies/random-insert-from-3-cams.jsx",
             "stopOnEntry": false
         },
         {
