@@ -7,6 +7,13 @@
         {
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Move Player To Edit Point",
+            "program": "${workspaceFolder}/ExtendScript/9-move-player/edit-points.jsx",
+            "stopOnEntry": false
+        },
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Move Player To Saved Position",
             "program": "${workspaceFolder}/ExtendScript/9-move-player/saved-position.jsx",
             "stopOnEntry": false
