@@ -8,10 +8,10 @@
 var seq = app.project.activeSequence; 
 
 // Get grip on markers
-var makers = seq.markers;
+var markers = seq.markers;
 
 // Add a new marker using the MarkerCollection.createMarker method
-var newMarker = makers.createMarker(1);
+var newMarker = markers.createMarker(1);
 newMarker.end = 2;
 
 /* ========================================================
