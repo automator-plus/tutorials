@@ -1,5 +1,7 @@
 /* ========================================================
         1. Moving to left and right markers
+        See https://raw.githubusercontent.com/automator-plus/tutorials/master/ExtendScript/9-move-player/edit-points.jsx 
+        for comments on how the below code works
    ======================================================== 
 **/
 
