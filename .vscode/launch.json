@@ -8,34 +8,34 @@
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player With Seconds",
-            "program": "${workspaceFolder}/ExtendScript/9-move-player/with-seconds.jsx",
+            "program": "${workspaceFolder}/ExtendScript/7-move-player/with-seconds.jsx",
             "stopOnEntry": false
         }, {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player To Markers",
-            "program": "${workspaceFolder}/ExtendScript/9-move-player/markers.jsx",
+            "program": "${workspaceFolder}/ExtendScript/7-move-player/markers.jsx",
             "stopOnEntry": false
         },
         {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player To Edit Point",
-            "program": "${workspaceFolder}/ExtendScript/9-move-player/edit-points.jsx",
+            "program": "${workspaceFolder}/ExtendScript/7-move-player/edit-points.jsx",
             "stopOnEntry": false
         },
         {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player To Saved Position",
-            "program": "${workspaceFolder}/ExtendScript/9-move-player/saved-position.jsx",
+            "program": "${workspaceFolder}/ExtendScript/7-move-player/saved-position.jsx",
             "stopOnEntry": false
         },
         {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player To Random Clip Start",
-            "program": "${workspaceFolder}/ExtendScript/9-move-player/random-position.jsx",
+            "program": "${workspaceFolder}/ExtendScript/7-move-player/random-position.jsx",
             "stopOnEntry": false
         },
         {
