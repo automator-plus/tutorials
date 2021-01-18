@@ -10,9 +10,8 @@
 - [Introduction](#introduction)
 - [AutoHotkey](#autohotkey)
   - [Tutorials](#tutorials)
-- [Adobe Common Extensibility Platform (CEP)](#adobe-common-extensibility-platform-cep)
+- [Adobe's ExtendScript](#adobes-extendscript)
   - [Tutorials](#tutorials-1)
-  - [Quickies](#quickies)
 
 # Introduction
 
@@ -46,7 +45,7 @@ Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaN
 
 + <a href='https://github.com/automator-plus/tutorials/blob/master/AutoHotkey/getting-started-with-AutoHotkey/getting-started-with-autohotkey.md'>Start Automating Premiere Pro with AutoHotkey</a>
 
-# Adobe Common Extensibility Platform (CEP) 
+# Adobe's ExtendScript 
 
 Although AutoHotkey is a lot more intuitive and easier to get started with if you don't have a programming background, a method of being dependent on the OS has its drawbacks. 
 
@@ -58,16 +57,12 @@ As with everything in life, whatever tools works for you and solves your problem
 
 Check out our YouTube channel <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>here</a> with videos for the following tutorials:
 
-+ <a href="./CEP/getting-started-with-the-adobe-premiere-pro-api/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started with the Adobe Premiere Pro API</a>
-+ <a href="./CEP/adobe-extendscript-programming-basics/adobe-extendscript-programming-basics.md">Adobe ExtendScript Programming Basics</a>
-+ <a href="./CEP/debugging-the-adobe-premiere-pro-api/debugging-the-adobe-premiere-pro-api.md">Debugging the Adobe Premiere Pro API</a>
-
-## Quickies
-
-We've also got tutorials on <a href='https://www.youtube.com/channel/UCZ37VRaNmWZ3ba0xQ2bsbOw'>our YouTube channel</a> for the following quickies:
-
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/insert-clip.jsx'>How to Insert a Clip in Premiere Pro</a>
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/insert-a-clip-at-places.jsx'>Various ways to Insert a Clip</a>
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/handling-markers.jsx'>How to Handle Markers</a>
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/change-clip-properties.jsx'>Changing the Properties of Clips</a>
-+ <a href='https://github.com/automator-plus/tutorials/blob/master/CEP/quickies/sequence-details-to-file.jsx'>Exporting Sequence Details</a>
+1. <a href="./ExtendScript/1-getting-started-with-extendscript/getting-started-with-the-adobe-premiere-pro-api.md">Getting Started With Extendscript</a>
+2. <a href="./ExtendScript/2-adobe-extendscript-basics/adobe-extendscript-programming-basics.md">Adobe Extendscript Basics</a>
+3. <a href="./ExtendScript/3-debugging-within-vs-code/debugging-the-adobe-premiere-pro-api.md">Debugging Within Vs Code</a>
+4. <a href="./ExtendScript/4-inserting-clips">Inserting Clips</a>
+5. <a href="./ExtendScript/5-apply-effects">Apply Effects</a>
+6. <a href="./ExtendScript/6-export-screenshots">Export Screenshots</a>
+7. <a href="./ExtendScript/7-move-player">Move Player</a>
+9. <a href="./ExtendScript/9-handling-markers">Handling Markers</a>
+10. <a href="./ExtendScript/10-sequence-details-file">Sequence Details File</a>
