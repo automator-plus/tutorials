@@ -6,6 +6,12 @@
     "configurations": [{
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Set nextClipStart = thisClipEnd",
+            "program": "${workspaceFolder}/ExtendScript/questions/nextClip-equal-thisClip/main.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Move Player With Seconds",
             "program": "${workspaceFolder}/ExtendScript/7-move-player/with-seconds.jsx",
             "stopOnEntry": false
