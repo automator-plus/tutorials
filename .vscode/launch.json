@@ -6,6 +6,30 @@
     "configurations": [{
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Basic Files and Folders Usage",
+            "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/basic-usage.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Import files into bins",
+            "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/import-files-into-bins.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "CSV Imports",
+            "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/csv-imports.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Lesser known ExtendScript",
+            "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/lesser-known-extendscript.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Set nextClipStart = thisClipEnd",
             "program": "${workspaceFolder}/ExtendScript/questions/nextClip-equal-thisClip/main.jsx",
             "stopOnEntry": false
