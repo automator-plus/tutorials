@@ -6,6 +6,12 @@
     "configurations": [{
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Make cut at player",
+            "program": "${workspaceFolder}/ExtendScript/11-make-cut-at-player/make-cut-at-player.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Basic Files and Folders Usage",
             "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/basic-usage.jsx",
             "stopOnEntry": false
