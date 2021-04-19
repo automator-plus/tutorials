@@ -6,6 +6,12 @@
     "configurations": [{
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Change color of clips",
+            "program": "${workspaceFolder}/ExtendScript/12-change-color-of-clip/change-color-of-clip.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Make cut at player",
             "program": "${workspaceFolder}/ExtendScript/11-make-cut-at-player/make-cut-at-player.jsx",
             "stopOnEntry": false
