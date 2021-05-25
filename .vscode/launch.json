@@ -6,6 +6,12 @@
     "configurations": [{
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Adding black frame to 30s",
+            "program": "${workspaceFolder}/ExtendScript/questions/time-object/adding-black-frame-up-to-30s.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Using the time object",
             "program": "${workspaceFolder}/ExtendScript/questions/time-object/using-the-time-object.jsx",
             "stopOnEntry": false
