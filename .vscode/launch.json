@@ -6,6 +6,12 @@
     "configurations": [{
             "type": "extendscript-debug",
             "request": "launch",
+            "name": "Other track methods",
+            "program": "${workspaceFolder}/ExtendScript/questions/other-track-methods/not-mute.jsx",
+            "stopOnEntry": false
+        }, {
+            "type": "extendscript-debug",
+            "request": "launch",
             "name": "Accessing other sequences",
             "program": "${workspaceFolder}/ExtendScript/questions/accessing-other-sequences/accessing-other-sequences.jsx",
             "stopOnEntry": false
