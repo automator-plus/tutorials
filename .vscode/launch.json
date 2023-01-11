@@ -3,79 +3,99 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [{
+    "configurations": [
+        {
+            "type": "extendscript-debug",
+            "request": "launch",
+            "name": "Go Pro GPS",
+            "program": "${workspaceFolder}/ExtendScript/questions/go-pro-gps/go-pro-gps.jsx",
+            "stopOnEntry": false
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Other track methods",
             "program": "${workspaceFolder}/ExtendScript/questions/other-track-methods/not-mute.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Accessing other sequences",
             "program": "${workspaceFolder}/ExtendScript/questions/accessing-other-sequences/accessing-other-sequences.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Adding black frame to 30s",
             "program": "${workspaceFolder}/ExtendScript/questions/time-object/adding-black-frame-up-to-30s.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Using the time object",
             "program": "${workspaceFolder}/ExtendScript/questions/time-object/using-the-time-object.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Change color of clips",
             "program": "${workspaceFolder}/ExtendScript/12-change-color-of-clip/change-color-of-clip.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Make cut at player",
             "program": "${workspaceFolder}/ExtendScript/11-make-cut-at-player/make-cut-at-player.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Basic Files and Folders Usage",
             "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/basic-usage.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Import files into bins",
             "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/import-files-into-bins.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "CSV Imports",
             "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/csv-imports.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Lesser known ExtendScript",
             "program": "${workspaceFolder}/ExtendScript/8-files-and-folders/lesser-known-extendscript.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Set nextClipStart = thisClipEnd",
             "program": "${workspaceFolder}/ExtendScript/questions/nextClip-equal-thisClip/main.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player With Seconds",
             "program": "${workspaceFolder}/ExtendScript/7-move-player/with-seconds.jsx",
             "stopOnEntry": false
-        }, {
+        },
+        {
             "type": "extendscript-debug",
             "request": "launch",
             "name": "Move Player To Markers",
