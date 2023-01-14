@@ -1,6 +1,6 @@
 var project = app.project;
 var sequence = project.activeSequence;
-var videoTracks = seq.videoTracks;
+var videoTracks = sequence.videoTracks;
 var videoClips = videoTracks[0].clips;
 var trackItem = videoClips[0];
 
